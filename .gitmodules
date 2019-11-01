@@ -1,0 +1,39 @@
+[submodule "Kesco.Lib.Win.Data"]
+	path = Kesco.Lib.Win.Data
+	url = https://github.com/Kesco-m/Kesco.Lib.Win.Data.git
+[submodule "Kesco.Lib.Win.Document"]
+	path = Kesco.Lib.Win.Document
+	url = https://github.com/Kesco-m/Kesco.Lib.Win.Document.git
+[submodule "Kesco.Lib.Win.Error"]
+	path = Kesco.Lib.Win.Error
+	url = https://github.com/Kesco-m/Kesco.Lib.Win.Error.git
+[submodule "Kesco.Lib.Win.ImageControl"]
+	path = Kesco.Lib.Win.ImageControl
+	url = https://github.com/Kesco-m/Kesco.Lib.Win.ImageControl.git
+[submodule "Kesco.Lib.Log"]
+	path = Kesco.Lib.Log
+	url = https://github.com/Kesco-m/Kesco.Lib.Log.git
+[submodule "Kesco.Lib.Win.MuPDF"]
+	path = Kesco.Lib.Win.MuPDF
+	url = https://github.com/Kesco-m/Kesco.Lib.Win.MuPDF.git
+[submodule "Kesco.Lib.Win.Options"]
+	path = Kesco.Lib.Win.Options
+	url = https://github.com/Kesco-m/Kesco.Lib.Win.Options.git
+[submodule "Kesco.Lib.Win.PrintReport"]
+	path = Kesco.Lib.Win.PrintReport
+	url = https://github.com/Kesco-m/Kesco.Lib.Win.PrintReport.git
+[submodule "Kesco.Lib.Win.Receive"]
+	path = Kesco.Lib.Win.Receive
+	url = https://github.com/Kesco-m/Kesco.Lib.Win.Receive.git
+[submodule "Kesco.Lib.Win.SingleInstance"]
+	path = Kesco.Lib.Win.SingleInstance
+	url = https://github.com/Kesco-m/Kesco.Lib.Win.SingleInstance.git
+[submodule "Kesco.Lib.Win.Tiff"]
+	path = Kesco.Lib.Win.Tiff
+	url = https://github.com/Kesco-m/Kesco.Lib.Win.Tiff.git
+[submodule "Kesco.Lib.Win.Win"]
+	path = Kesco.Lib.Win.Win
+	url = https://github.com/Kesco-m/Kesco.Lib.Win.Win.git
+[submodule "_Assemblies"]
+	path = _Assemblies
+	url = https://github.com/Kesco-m/_Assemblies.git
