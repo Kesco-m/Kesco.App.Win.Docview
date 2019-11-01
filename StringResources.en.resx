@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Main.Message" xml:space="preserve">
+    <value>Archive of document is not available</value>
+  </data>
+  <data name="Search.NotFound.Message1" xml:space="preserve">
+    <value>Documents not find.</value>
+  </data>
+  <data name="Search.NotFound.Message2" xml:space="preserve">
+    <value>Do you want change parameters and repeat search?</value>
+  </data>
+  <data name="Search.NotFound.Title" xml:space="preserve">
+    <value>Nothing found</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="Main.Error1" xml:space="preserve">
+    <value>Error in main form.</value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="MainForm.MainFormDialog.AnalyzeArgsFileName.Message1" xml:space="preserve">
+    <value>Save printed document as image for document </value>
+  </data>
+  <data name="MainForm.MainFormDialog.AnalyzeArgsFileName.Title1" xml:space="preserve">
+    <value>Printed document</value>
+  </data>
+  <data name="MainForm.MainFormDialog.On_DocProperties.Message1" xml:space="preserve">
+    <value>Fax NOT sending: </value>
+  </data>
+  <data name="MainForm.MainFormDialog.On_DocProperties.Message2" xml:space="preserve">
+    <value> for: '</value>
+  </data>
+  <data name="MainForm.MainFormDialog.On_DocProperties.Message3" xml:space="preserve">
+    <value>'NOT sending!' (</value>
+  </data>
+  <data name="MainForm.MainFormDialog.On_DocProperties.Message4" xml:space="preserve">
+    <value>'was not sending - sending again.' (</value>
+  </data>
+  <data name="MainForm.MainFormDialog.On_DocProperties.Title1" xml:space="preserve">
+    <value>Properties of outgoing fax</value>
+  </data>
+  <data name="MainForm.MainFormDialog.On_DocProperties.Message5" xml:space="preserve">
+    <value>Error reading fax status.</value>
+  </data>
+  <data name="Main.Error2" xml:space="preserve">
+    <value>Error in Main(): </value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>File </value>
+  </data>
+  <data name="MainForm.MainFormDialog.On_FaxDescr.Message1" xml:space="preserve">
+    <value>Fax description</value>
+  </data>
+  <data name="MainForm.MainFormDialog.On_FaxDescr.Title1" xml:space="preserve">
+    <value>Input fax description:</value>
+  </data>
+  <data name="MainForm.MainFormDialog.On_DeleteDoc.Message1" xml:space="preserve">
+    <value>You are going to delete document </value>
+  </data>
+  <data name="MainForm.MainFormDialog.On_DeleteDoc.Message2" xml:space="preserve">
+    <value> from archive.</value>
+  </data>
+  <data name="MainForm.MainFormDialog.On_DeleteDoc.Message3" xml:space="preserve">
+    <value>Doument will be delete finally, without chance to restore.</value>
+  </data>
+  <data name="MainForm.MainFormDialog.On_DeleteDoc.Message4" xml:space="preserve">
+    <value>Are you sure that you want to delete this document?</value>
+  </data>
+  <data name="MainForm.MainFormDialog.RealAnalyzeCurrentCell.Message1" xml:space="preserve">
+    <value>Wrong document ID.</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ToWidth" xml:space="preserve">
+    <value>to width</value>
+  </data>
+  <data name="ToHeigth" xml:space="preserve">
+    <value>to height</value>
+  </data>
+  <data name="ToWindow" xml:space="preserve">
+    <value>to window</value>
+  </data>
+  <data name="MainForm.MainFormDialog.MainFormDialog.Error1" xml:space="preserve">
+    <value>Can not connect to DB documents</value>
+  </data>
+  <data name="MainForm.MainFormDialog.MainFormDialog.Error2" xml:space="preserve">
+    <value>Can not connect to DB finance</value>
+  </data>
+  <data name="MainForm.MainFormDialog.MainFormDialog_KeyDown.Message1" xml:space="preserve">
+    <value>Can not find current person in list.</value>
+  </data>
+  <data name="MainForm.MainFormDialog.MainFormDialog_KeyDown.Message2" xml:space="preserve">
+    <value>Person ID: </value>
+  </data>
+  <data name="MainForm.MainFormDialog.GotMessage.Message1" xml:space="preserve">
+    <value>New message incoming for document:</value>
+  </data>
+  <data name="MainForm.MainFormDialog.GotMessage.Message2" xml:space="preserve">
+    <value>Goto this document?</value>
+  </data>
+  <data name="MainForm.MainFormDialog.GotMessage.Title1" xml:space="preserve">
+    <value>New message</value>
+  </data>
+  <data name="MainForm.MainFormDialog.SelectWorkDoc.Message1" xml:space="preserve">
+    <value>Can not find work folder for document with ID </value>
+  </data>
+  <data name="MainForm.MainFormDialog.textShow.Message1" xml:space="preserve">
+    <value>[No group]</value>
+  </data>
+  <data name="MainForm.MainFormDialog.On_Refresh.Message1" xml:space="preserve">
+    <value>Error refresh:</value>
+  </data>
+  <data name="MainForm.MainFormDialog.Zoom.Minimum" xml:space="preserve">
+    <value>Minimum zoom: </value>
+  </data>
+  <data name="InputError" xml:space="preserve">
+    <value>Input error</value>
+  </data>
+  <data name="MainForm.MainFormDialog.Zoom.Maximum" xml:space="preserve">
+    <value>Maximum zoom: </value>
+  </data>
+  <data name="MainForm.MainFormDialog.menuDoc_Popup.Message1" xml:space="preserve">
+    <value>[No name]</value>
+  </data>
+  <data name="MainForm.MainFormDialog.SelectDBDoc.Message1" xml:space="preserve">
+    <value>This documen exsists in archive organization</value>
+  </data>
+  <data name="MainForm.MainFormDialog.SelectDBDoc.Message2" xml:space="preserve">
+    <value>Switch to this archive?</value>
+  </data>
+  <data name="MainForm.MainFormDialog.SelectDBDoc.Title1" xml:space="preserve">
+    <value>Can not open document</value>
+  </data>
+  <data name="MainForm.MainFormDialog.SelectDBDoc.Message3" xml:space="preserve">
+    <value>This document exists in general archive</value>
+  </data>
+  <data name="MainForm.MainFormDialog.SelectDBDoc.Message4" xml:space="preserve">
+    <value>Switch to general archive?</value>
+  </data>
+  <data name="ScanedDoc" xml:space="preserve">
+    <value>Scaned document</value>
+  </data>
+  <data name="AllDocs" xml:space="preserve">
+    <value>Total documents in folder - </value>
+  </data>
+  <data name="SelectedDocs" xml:space="preserve">
+    <value>, selected - </value>
+  </data>
+  <data name="Pages" xml:space="preserve">
+    <value>Page №{0}. Total pages in image - {1}</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>Page </value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value> from </value>
+  </data>
+  <data name="SubFormDialog.Text1" xml:space="preserve">
+    <value>New e-form create</value>
+  </data>
+  <data name="Document" xml:space="preserve">
+    <value>Document </value>
+  </data>
+  <data name="MainForm.FolderSelectDialog.buttonOK_Click.Message1" xml:space="preserve">
+    <value>is exists in folder </value>
+  </data>
+  <data name="MainForm.FolderSelectDialog.buttonOK_Click.Title1" xml:space="preserve">
+    <value>Document is currently in work</value>
+  </data>
+  <data name="ConfirmTypeDialog.TypeString.Message1" xml:space="preserve">
+    <value>This document type have link with document, type of</value>
+  </data>
+  <data name="ConfirmTypeDialog.TypeString.Message2" xml:space="preserve">
+    <value> Are you sure, that you want to create the document of such type</value>
+  </data>
+  <data name="Environment.ReadData.Error" xml:space="preserve">
+    <value>Cannot recieve the status of reading document in work folder</value>
+  </data>
+  <data name="Environment.CheckLinkDoc.Error1" xml:space="preserve">
+    <value>Cross link exists.</value>
+  </data>
+  <data name="Environment.CheckLinkDoc.Error2" xml:space="preserve">
+    <value>Can not create the link because</value>
+  </data>
+  <data name="FolderDialog" xml:space="preserve">
+    <value>Select path to folder to connect...</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="Rights" xml:space="preserve">
+    <value>Rights</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="DocumentType" xml:space="preserve">
+    <value>Document type</value>
+  </data>
+  <data name="DocumentNumber" xml:space="preserve">
+    <value>Document number</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="LoopLinkDialog.ChooseDocDialog_Load.Message2" xml:space="preserve">
+    <value>Access to change</value>
+  </data>
+  <data name="Available" xml:space="preserve">
+    <value>Available</value>
+  </data>
+  <data name="NotAvailable" xml:space="preserve">
+    <value>Not available</value>
+  </data>
+  <data name="LoopLinkDialog.ChooseDocDialog_Load.Message1" xml:space="preserve">
+    <value>Link between document {0} (main) and {1} (subsequent) cannot be created, because there is feedback link between them through the following documents:</value>
+  </data>
+  <data name="MergeDocsDialog.buttonOK_Click.Message1" xml:space="preserve">
+    <value>Attention! When joining the e-form will bу deleted with removing document</value>
+  </data>
+  <data name="MergeDocsDialog.buttonOK_Click.Message2" xml:space="preserve">
+    <value>for the following reason</value>
+  </data>
+  <data name="MergeDocsDialog.buttonOK_Click.Message3" xml:space="preserve">
+    <value> - E-form exists in both document</value>
+  </data>
+  <data name="MergeDocsDialog.buttonOK_Click.Message4" xml:space="preserve">
+    <value> - Type of document is not coincide</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Continue?</value>
+  </data>
+  <data name="MergeDocsDialog.buttonOK_Click.Title1" xml:space="preserve">
+    <value>Delete e-form</value>
+  </data>
+  <data name="Absent" xml:space="preserve">
+    <value>Absent</value>
+  </data>
+  <data name="SettingsMessagesAndConfirmsDialog.buttonOK_Click.Message1" xml:space="preserve">
+    <value>Number must be between</value>
+  </data>
+  <data name="SettingsMessagesAndConfirmsDialog.buttonOK_Click.Message2" xml:space="preserve">
+    <value> and </value>
+  </data>
+  <data name="SettingsMessagesAndConfirmsDialog.buttonOK_Click.Message3" xml:space="preserve">
+    <value>Wrong number format. Repeat input.</value>
+  </data>
+  <data name="FaxPropertiButtonControl.Message1" xml:space="preserve">
+    <value>Goto document in archive</value>
+  </data>
+  <data name="DocProperties.DocProperties_Load.Message1" xml:space="preserve">
+    <value>Save document to archive</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="DocProperties.buttonOK_Click.Message1" xml:space="preserve">
+    <value>Repeat input</value>
+  </data>
+  <data name="DocProperties.buttonOK_Click.Message2" xml:space="preserve">
+    <value>You have not specified any</value>
+  </data>
+  <data name="DocProperties.buttonOK_Click.Message3" xml:space="preserve">
+    <value>You have not specified number of the document. Continue?</value>
+  </data>
+  <data name="DocProperties.buttonOK_Click.Message4" xml:space="preserve">
+    <value>Number of the document specified by you does not contain figures. Continue?</value>
+  </data>
+  <data name="DocProperties.buttonOK_Click.Message5" xml:space="preserve">
+    <value>You have not specified  date of the document. Continue?</value>
+  </data>
+  <data name="DocProperties.buttonOK_Click.Message6" xml:space="preserve">
+    <value>You have specified only one </value>
+  </data>
+  <data name="DocProperties.buttonOK_Click.Message7" xml:space="preserve">
+    <value>For the majority of documents it is required to specify not less than two </value>
+  </data>
+  <data name="DocProperties.buttonOK_Click.Message8" xml:space="preserve">
+    <value>Save document with one </value>
+  </data>
+  <data name="DocProperties.SaveDoc.Message1" xml:space="preserve">
+    <value>While you edited properties of the document, it was already saved by other employee</value>
+  </data>
+  <data name="Change" xml:space="preserve">
+    <value>Editor</value>
+  </data>
+  <data name="DateChange" xml:space="preserve">
+    <value>Edited</value>
+  </data>
+  <data name="DocProperties.SaveDoc.Message2" xml:space="preserve">
+    <value>Replace the document?</value>
+  </data>
+  <data name="DocProperties.SaveDoc.Title1" xml:space="preserve">
+    <value>Document changed</value>
+  </data>
+  <data name="Properties.PropertiesFolderRuleSearchDialog.Message1" xml:space="preserve">
+    <value>New folder rule</value>
+  </data>
+  <data name="Properties.PropertiesFolderRuleSearchDialog.Message2" xml:space="preserve">
+    <value>Edit folder rule</value>
+  </data>
+  <data name="FolderNotExist" xml:space="preserve">
+    <value>Folder do not exist</value>
+  </data>
+  <data name="Properties.PropertiesFolderRuleSearchDialog.SaveRuleButton_Click.Message2" xml:space="preserve">
+    <value>Role already exists.</value>
+  </data>
+  <data name="Properties.PropertiesFolderRuleSearchDialog.SaveRuleButton_Click.Message3" xml:space="preserve">
+    <value>There is no parameters for rule.</value>
+  </data>
+  <data name="Properties.PropertiesFolderRuleSearchDialog.SaveRuleButton_Click.Message4" xml:space="preserve">
+    <value>Specify a name of rule.</value>
+  </data>
+  <data name="Properties.PropertiesFolderRuleSearchDialog.SaveRuleButton_Click.Message5" xml:space="preserve">
+    <value>Rule with such name already exists.</value>
+  </data>
+  <data name="Properties.PropertiesFolderRuleViewDialog.Text1" xml:space="preserve">
+    <value>The document gets in a folder</value>
+  </data>
+  <data name="Properties.PropertiesFolderRuleViewDialog.Text2" xml:space="preserve">
+    <value>if incoming messages on it satisfy one of the rules:</value>
+  </data>
+  <data name="Properties.PropertiesFolderRuleViewDialog.DeleteRuleButton_Click.Message1" xml:space="preserve">
+    <value>Are you sure want to delete the chosen rules?</value>
+  </data>
+  <data name="Properties.PropertiesFolderRuleViewDialog.DeleteRuleButton_Click.Title1" xml:space="preserve">
+    <value>Delete rules</value>
+  </data>
+  <data name="Properties.PropertiesScanDialog.buttonSave_Click.Message1" xml:space="preserve">
+    <value>Description must not contain following symbols</value>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <data name="Access" xml:space="preserve">
+    <value>Access</value>
+  </data>
+  <data name="Full" xml:space="preserve">
+    <value>Full</value>
+  </data>
+  <data name="ReadOnly" xml:space="preserve">
+    <value>Read only</value>
+  </data>
+  <data name="FolderTree.ShareWorkFolder.buttonRemove_Click.Message1" xml:space="preserve">
+    <value>Are you sure want to remove chosen employees from list?</value>
+  </data>
+  <data name="FolderTree.FolderNodes.DocumentNode.Message1" xml:space="preserve">
+    <value>Hide document</value>
+  </data>
+  <data name="MainDocuments" xml:space="preserve">
+    <value>Main documents</value>
+  </data>
+  <data name="SubsequentDocuments" xml:space="preserve">
+    <value>Subsequent documents</value>
+  </data>
+  <data name="Archive" xml:space="preserve">
+    <value>Archive</value>
+  </data>
+  <data name="FolderTree.FolderNodes.CatalogNode.Message1" xml:space="preserve">
+    <value>Transfer folder to employee</value>
+  </data>
+  <data name="SelectArchive" xml:space="preserve">
+    <value>Select archive</value>
+  </data>
+  <data name="FolderTree.FolderNodes.CatalogNode.UserDialog_DialogEvent.Message1" xml:space="preserve">
+    <value>All documents of type </value>
+  </data>
+  <data name="FolderTree.FolderNodes.CatalogNode.UserDialog_DialogEvent.Message2" xml:space="preserve">
+    <value>linked with </value>
+  </data>
+  <data name="FolderTree.FolderNodes.CatalogNode.UserDialog_DialogEvent.Message3" xml:space="preserve">
+    <value>will be transfered to employee</value>
+  </data>
+  <data name="FolderTree.FolderNodes.CatalogNode.UserDialog_DialogEvent.Message4" xml:space="preserve">
+    <value>in personal archive</value>
+  </data>
+  <data name="FolderTree.FolderNodes.CatalogNode.UserDialog_DialogEvent.Title1" xml:space="preserve">
+    <value>Archive folder transfer</value>
+  </data>
+  <data name="Scaner" xml:space="preserve">
+    <value>Scaner</value>
+  </data>
+  <data name="InWork" xml:space="preserve">
+    <value>In work</value>
+  </data>
+  <data name="CreateFolder" xml:space="preserve">
+    <value>Create folder</value>
+  </data>
+  <data name="Rename" xml:space="preserve">
+    <value>Rename</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="SharedAccess" xml:space="preserve">
+    <value>Shared access</value>
+  </data>
+  <data name="RulesSort" xml:space="preserve">
+    <value>Document sort roles</value>
+  </data>
+  <data name="FolderName" xml:space="preserve">
+    <value>Folder name</value>
+  </data>
+  <data name="FolderNameInput" xml:space="preserve">
+    <value>Input folder name:</value>
+  </data>
+  <data name="NewFolder" xml:space="preserve">
+    <value>New folder</value>
+  </data>
+  <data name="FolderTree.FolderNodes.WorkFolderNode.deleteItem_Click.Message1" xml:space="preserve">
+    <value>Are you sure want to delete selected folder with all subfolders?</value>
+  </data>
+  <data name="FolderTree.FolderNodes.WorkFolderNode.deleteItem_Click.Message2" xml:space="preserve">
+    <value>Work with all documents in these folders will be ended.</value>
+  </data>
+  <data name="SharedFolders" xml:space="preserve">
+    <value>Shared folders</value>
+  </data>
+  <data name="Properties" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="DocGrid.InfoGrid.FormatCell.Error1" xml:space="preserve">
+    <value>Attempt to format a cell</value>
+  </data>
+  <data name="FolderTree.FolderNodes.FoundNode.Title1" xml:space="preserve">
+    <value>Found (Inquiries)</value>
+  </data>
+  <data name="ToChange" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="CreateInquiry" xml:space="preserve">
+    <value>Create inquiry</value>
+  </data>
+  <data name="Find" xml:space="preserve">
+    <value>Find</value>
+  </data>
+  <data name="FindID" xml:space="preserve">
+    <value>Find by ID</value>
+  </data>
+  <data name="InquiryName" xml:space="preserve">
+    <value>Inquiry name</value>
+  </data>
+  <data name="InquiryNameInput" xml:space="preserve">
+    <value>Input inquiry name:</value>
+  </data>
+  <data name="FolderTree.FolderNodes.FoundNode.Rename_DialogEvent.Message1" xml:space="preserve">
+    <value>Inquiry with such name already exists.</value>
+  </data>
+  <data name="FolderTree.FolderNodes.FoundNode.Rename_DialogEvent.Message2" xml:space="preserve">
+    <value>Overwrite?</value>
+  </data>
+  <data name="FolderTree.FolderNodes.FoundNode.Rename_DialogEvent.Title1" xml:space="preserve">
+    <value>Rename the inquiry</value>
+  </data>
+  <data name="FolderTree.FolderNodes.FoundNode.deleteItem_Click.Message1" xml:space="preserve">
+    <value>Are you sure want to delete the inquiry</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message1" xml:space="preserve">
+    <value>Add e-form to current document</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message2" xml:space="preserve">
+    <value>Create  subsequent document</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message3" xml:space="preserve">
+    <value>Add to work</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message4" xml:space="preserve">
+    <value>End work with document(s)</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message5" xml:space="preserve">
+    <value>Placing in work folders</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message6" xml:space="preserve">
+    <value>Delete from archive</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message7" xml:space="preserve">
+    <value>Send message</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message8" xml:space="preserve">
+    <value>Delete from Found</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message9" xml:space="preserve">
+    <value>Mark Message(s) as read</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message10" xml:space="preserve">
+    <value>Goto folder</value>
+  </data>
+  <data name="Of" xml:space="preserve">
+    <value>from </value>
+  </data>
+  <data name="DocGrid.Styles.FaxesInStyle.Message1" xml:space="preserve">
+    <value>Change description</value>
+  </data>
+  <data name="IncomingFax" xml:space="preserve">
+    <value>Incoming fax</value>
+  </data>
+  <data name="Received" xml:space="preserve">
+    <value>received</value>
+  </data>
+  <data name="Sender" xml:space="preserve">
+    <value>Sender:</value>
+  </data>
+  <data name="DocGrid.Styles.FaxesInStyle.DocStringToSave.Message1" xml:space="preserve">
+    <value>Fax is received</value>
+  </data>
+  <data name="OutgoingFax" xml:space="preserve">
+    <value>Outgoing fax</value>
+  </data>
+  <data name="Sended" xml:space="preserve">
+    <value>Sent</value>
+  </data>
+  <data name="SendFax" xml:space="preserve">
+    <value>Fax is sent</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>at</value>
+  </data>
+  <data name="Reciever" xml:space="preserve">
+    <value>Recipient:</value>
+  </data>
+  <data name="Spam" xml:space="preserve">
+    <value>Spam</value>
+  </data>
+  <data name="AddPerson" xml:space="preserve">
+    <value>Add person</value>
+  </data>
+  <data name="Blocks.Person.Message1" xml:space="preserve">
+    <value>person is not specified</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="LocalDate" xml:space="preserve">
+    <value>Local date</value>
+  </data>
+  <data name="ChangeDate" xml:space="preserve">
+    <value>File change date</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="Num" xml:space="preserve">
+    <value>#</value>
+  </data>
+  <data name="SimilarDocsDialog.ChooseDocDialog_Load.Message1" xml:space="preserve">
+    <value>In archive find</value>
+  </data>
+  <data name="SimilarDocsDialog.ChooseDocDialog_Load.Message2" xml:space="preserve">
+    <value>similar document</value>
+  </data>
+  <data name="SimilarDocsDialog.ChooseDocDialog_Load.Message3" xml:space="preserve">
+    <value>similar documents</value>
+  </data>
+  <data name="SimilarDocsDialog.ChooseDocDialog_Load.Message4" xml:space="preserve">
+    <value>similar documents</value>
+  </data>
+  <data name="SimilarDocsDialog.ChooseDocDialog_Load.Message5" xml:space="preserve">
+    <value>[number is not specified]</value>
+  </data>
+  <data name="SimilarDocsDialog.ChooseDocDialog_Load.Message6" xml:space="preserve">
+    <value>[date is not specified]</value>
+  </data>
+  <data name="JoinError" xml:space="preserve">
+    <value>Join error</value>
+  </data>
+  <data name="SimilarDocsDialog.buttonMerge_Click.Message1" xml:space="preserve">
+    <value>Both documents are signed, merge is impossible.</value>
+  </data>
+  <data name="SavePart" xml:space="preserve">
+    <value>Save part</value>
+  </data>
+  <data name="SaveSelected" xml:space="preserve">
+    <value>Save selected</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="OpenNewWindow" xml:space="preserve">
+    <value>Open in new window</value>
+  </data>
+  <data name="NeedReload" xml:space="preserve">
+    <value>To apply lenguage setting restart the archive.
+Restart now?</value>
+  </data>
+  <data name="MainFormDialog.ShowErrorAndMessageWindow.Message1" xml:space="preserve">
+    <value>Some messages not sending</value>
+  </data>
+  <data name="MainFormDialog.ShowErrorAndMessageWindow.Title1" xml:space="preserve">
+    <value>Error while send messages</value>
+  </data>
+  <data name="SettingsMessagesAndConfirmsDialog.buttonOk_Click.Message4" xml:space="preserve">
+    <value>For change barcode using restart the archive.
+Restart now?
+	</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message11" xml:space="preserve">
+    <value>Create answer</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message12" xml:space="preserve">
+    <value>Scan image of the current document</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message13" xml:space="preserve">
+    <value>Add new image of the current document</value>
+  </data>
+  <data name="SubFormDialog.Text2" xml:space="preserve">
+    <value>creating answer</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="MailFrom" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="Receive" xml:space="preserve">
+    <value>Received</value>
+  </data>
+  <data name="Spent" xml:space="preserve">
+    <value>Transferred</value>
+  </data>
+  <data name="ChangeSearch" xml:space="preserve">
+    <value>Сhange search parameters</value>
+  </data>
+  <data name="Read" xml:space="preserve">
+    <value>Read</value>
+  </data>
+  <data name="DeleteFolder" xml:space="preserve">
+    <value>Delete folder?</value>
+  </data>
+  <data name="MoveOrCopyMessage" xml:space="preserve">
+    <value>Move or copy message in folder</value>
+  </data>
+  <data name="DeleteMessage" xml:space="preserve">
+    <value>Delete message</value>
+  </data>
+  <data name="ReceivedMessage" xml:space="preserve">
+    <value>Received new message. Read?</value>
+  </data>
+  <data name="OutcomingFax" xml:space="preserve">
+    <value>Outcoming Fax</value>
+  </data>
+  <data name="ArchiveDoc" xml:space="preserve">
+    <value>Archive</value>
+  </data>
+  <data name="Inquiries" xml:space="preserve">
+    <value>Inquiries</value>
+  </data>
+  <data name="Found" xml:space="preserve">
+    <value>Found</value>
+  </data>
+  <data name="InWorkDoc" xml:space="preserve">
+    <value>In work</value>
+  </data>
+  <data name="IncomingFaxDoc" xml:space="preserve">
+    <value>Incoming fax</value>
+  </data>
+  <data name="OuterScaner" xml:space="preserve">
+    <value>Outer Scaner</value>
+  </data>
+  <data name="EditPersons" xml:space="preserve">
+    <value>edit persons</value>
+  </data>
+  <data name="CancelEditPersons" xml:space="preserve">
+    <value>Undo edit persons of document</value>
+  </data>
+  <data name="RedoEditPersons" xml:space="preserve">
+    <value>Redo edit persons of document</value>
+  </data>
+  <data name="EditDocProp" xml:space="preserve">
+    <value>edit document properties</value>
+  </data>
+  <data name="UndoEditDocProp" xml:space="preserve">
+    <value>Undo edit properties of document</value>
+  </data>
+  <data name="RedoEditDocProp" xml:space="preserve">
+    <value>Redo edit properties of document</value>
+  </data>
+  <data name="RemoveDocFromWork" xml:space="preserve">
+    <value>remove from work</value>
+  </data>
+  <data name="UndoRemoveDocFromWork" xml:space="preserve">
+    <value>Undo remove document {0} from work </value>
+  </data>
+  <data name="RedoRemoveDocFromWork" xml:space="preserve">
+    <value>Redo remove document {0} from work </value>
+  </data>
+  <data name="AddDocToWork" xml:space="preserve">
+    <value>add to work</value>
+  </data>
+  <data name="UndoAddDocToWork" xml:space="preserve">
+    <value>Undo add document {0} to work</value>
+  </data>
+  <data name="RedoAddDocToWork" xml:space="preserve">
+    <value>Redo add document {0} to work</value>
+  </data>
+  <data name="AddLink" xml:space="preserve">
+    <value>add link</value>
+  </data>
+  <data name="UndoAddLink" xml:space="preserve">
+    <value>Undo add link between {0} and {1}</value>
+  </data>
+  <data name="RedoAddLink" xml:space="preserve">
+    <value>Redo add link between {0} and {1}</value>
+  </data>
+  <data name="RemoveLink" xml:space="preserve">
+    <value>remove link</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>ENG</value>
+  </data>
+  <data name="Appointment" xml:space="preserve">
+    <value>Elements of the type "Appointment"</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Elements of the type "Contact"</value>
+  </data>
+  <data name="Journal" xml:space="preserve">
+    <value>Elements of the type "Journal"</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Elements of the type "Note"</value>
+  </data>
+  <data name="StickyNote" xml:space="preserve">
+    <value>Elements of the type "Sticky note"</value>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>Elements of the type "Task"</value>
+  </data>
+  <data name="DeleteFolderException" xml:space="preserve">
+    <value>Folder with such name already exists. Use other name.</value>
+  </data>
+  <data name="FolderContent" xml:space="preserve">
+    <value>Folder content</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="MoveFolder" xml:space="preserve">
+    <value>Move</value>
+  </data>
+  <data name="CopyFolder" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="MoveOrCopyFolder" xml:space="preserve">
+    <value>Move or copy selected elements in folder</value>
+  </data>
+  <data name="RenameCurrentFolder" xml:space="preserve">
+    <value>Rename current folder :</value>
+  </data>
+  <data name="IncorrectObjectName" xml:space="preserve">
+    <value>Incorrect object name</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>Reply</value>
+  </data>
+  <data name="ReplyAll" xml:space="preserve">
+    <value>Reply all</value>
+  </data>
+  <data name="Forward" xml:space="preserve">
+    <value>Forward</value>
+  </data>
+  <data name="SendedMail" xml:space="preserve">
+    <value>Sent</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="CleanFolder" xml:space="preserve">
+    <value>Clean folder</value>
+  </data>
+  <data name="CleanDeletedItems" xml:space="preserve">
+    <value>Delete all elements and embedded directories without possibility of the reconstruction?</value>
+  </data>
+  <data name="WithoutName" xml:space="preserve">
+    <value>No name</value>
+  </data>
+  <data name="MailTo" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="MainFormDialog.SendFax.Message1" xml:space="preserve">
+    <value>You does not have right to send out of office</value>
+  </data>
+  <data name="MainFormDialog.ErrorSend" xml:space="preserve">
+    <value>Send error</value>
+  </data>
+  <data name="SetMain" xml:space="preserve">
+    <value>Set main</value>
+  </data>
+  <data name="SelectImage" xml:space="preserve">
+    <value>Select image</value>
+  </data>
+  <data name="Saved" xml:space="preserve">
+    <value>Saved</value>
+  </data>
+  <data name="Blocks.Person.All" xml:space="preserve">
+    <value>&lt;all&gt;</value>
+  </data>
+  <data name="msgboxInvalidSupportSettings" xml:space="preserve">
+    <value>There is no settings configured for sending information to technical support.|Warning</value>
+  </data>
+  <data name="ArchiveDocs" xml:space="preserve">
+    <value>Archive of documents</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="creating" xml:space="preserve">
+    <value>creating</value>
+  </data>
+  <data name="editing" xml:space="preserve">
+    <value>editing</value>
+  </data>
+  <data name="TooManyDocs" xml:space="preserve">
+    <value>Show only {0} documents. There are more documents.</value>
+  </data>
+  <data name="Kesco.App.Win.DocView.Dialogs.Rules.DelRulesConf" xml:space="preserve">
+    <value>Delete selected rules?</value>
+  </data>
+  <data name="Kesco.App.Win.DocView.Dialogs.Rules.Select" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="Kesco.App.Win.DocView.Dialogs.Rules.Exists" xml:space="preserve">
+    <value>Such rule is already established</value>
+  </data>
+  <data name="Kesco.App.Win.DocView.Dialogs.Rules.Exists1" xml:space="preserve">
+    <value>Rules that are created by a particular case was found.{0}
+Remove them and create a new one?</value>
+  </data>
+  <data name="StampEditDialog.CheckNew.ErrorMessage1" xml:space="preserve">
+    <value>It is nessary to give the names of the stamp.</value>
+  </data>
+  <data name="StampEditDialog.CheckNew.ErrorMessage2" xml:space="preserve">
+    <value>It is nessary to add the image of the stamp.</value>
+  </data>
+  <data name="StampEditDialog.CheckNew.ErrorMessage3" xml:space="preserve">
+    <value>Error while saving the image of the stamp.</value>
+  </data>
+  <data name="needSigns" xml:space="preserve">
+    <value>Requires one of the signatures:</value>
+  </data>
+  <data name="HideForm.SearchTest.Message1" xml:space="preserve">
+    <value>Count of find documents is more then </value>
+  </data>
+  <data name="HideForm.SearchTest.Message2" xml:space="preserve">
+    <value>For doument selection you must specify the search criteria.</value>
+  </data>
+  <data name="outlookdir" xml:space="preserve">
+    <value>OutLook temp files</value>
+  </data>
+  <data name="ColumnsParamsEmptyAlarm.Failed" xml:space="preserve">
+    <value>No visible columns were found. We deeply regret.</value>
+  </data>
+  <data name="ColumnsParamsEmptyAlarm.Text" xml:space="preserve">
+    <value>No visible columns were found. Do you wish to reset parameters to default?</value>
+  </data>
+  <data name="VerifyUDCPrinter.AutoTunePrinter.Success" xml:space="preserve">
+    <value>Auto setup has been performed!</value>
+  </data>
+  <data name="VerifyUDCPrinter.AutoTunePrinter.YesNo" xml:space="preserve">
+    <value>Printer Settings Archive documents do not meet the requirements of preserving the image of the document in the program archive documents. You can automatically install the necessary parameters. Perform automatic tuning?</value>
+  </data>
+  <data name="VerifyUDCPrinter.ImpossibleToSave" xml:space="preserve">
+    <value>It is impossible to save the image!</value>
+  </data>
+  <data name="VerifyUDCPrinter.SendDocToPrinterAgain" xml:space="preserve">
+    <value>Try to print your document once again!</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message90" xml:space="preserve">
+    <value>Mark Message(s) as not-read</value>
+  </data>
+  <data name="ShouldReadMessageOnEndWork" xml:space="preserve">
+    <value>Do you wish to mark the document messages as read?</value>
+  </data>
+  <data name="SettingsMessagesAndConfirmsDialog.buttonOK_Click.Message5" xml:space="preserve">
+    <value>It is necessary to specify a message for marking documents as not read!</value>
+  </data>
+  <data name="TmpFilesOnCloseWarning" xml:space="preserve">
+    <value>Attention! You make changes to the files read-only.{0}All of your changes will be lost.{0}Continue to work with the Archive of document?</value>
+  </data>
+  <data name="RemoveMessageOnEndWork" xml:space="preserve">
+    <value>End work with this document?</value>
+  </data>
+  <data name="RedoMarkDocAsNotRead" xml:space="preserve">
+    <value>Mark message as not read for document {0} from {1}</value>
+  </data>
+  <data name="RedoMarkDocAsRead" xml:space="preserve">
+    <value>Mark message as read for document {0} from {1}</value>
+  </data>
+  <data name="UndoMarkDocAsNotRead" xml:space="preserve">
+    <value>Mark message as read for document </value>
+  </data>
+  <data name="UndoMarkDocAsRead" xml:space="preserve">
+    <value>Mark message as not read for document </value>
+  </data>
+  <data name="Changed" xml:space="preserve">
+    <value>changed </value>
+  </data>
+  <data name="Help1" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="ColumnsDedales" xml:space="preserve">
+    <value>More...</value>
+  </data>
+  <data name="AddGroupBoxPages" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="rbAllPages" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="rbSelectedPages" xml:space="preserve">
+    <value>Pages from:</value>
+  </data>
+  <data name="label3" xml:space="preserve">
+    <value>to:</value>
+  </data>
+  <data name="SelectStampDialog_Message1" xml:space="preserve">
+    <value>Are you sure that you want to remove the selected stamps?</value>
+  </data>
+  <data name="MainForm.REDORotateImageCW" xml:space="preserve">
+    <value>Do image rotation</value>
+  </data>
+  <data name="MainForm.UNDORotateImageCW" xml:space="preserve">
+    <value>Cancel image rotation</value>
+  </data>
+  <data name="MainForm.REDOAddImageToDoc" xml:space="preserve">
+    <value>Re-add a picture</value>
+  </data>
+  <data name="MainForm.UNDOAddImageToDoc" xml:space="preserve">
+    <value>Undo add image</value>
+  </data>
+</root>

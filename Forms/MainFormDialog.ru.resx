@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="menuAddDocData.Text" xml:space="preserve">
+    <value>Создать новый документ по эл. форме...</value>
+  </data>
+	<data name="menuScan.Text" xml:space="preserve">
+    <value>Сканировать новый документ...</value>
+  </data>
+	<data name="menuScanCurrentDoc.Text" xml:space="preserve">
+    <value>Сканировать изображение текущего элемента...</value>
+  </data>
+	<data name="menuAddImageCurrentDoc.Text" xml:space="preserve">
+    <value>Добавить новое изображение текущего элемента...</value>
+  </data>
+	<data name="menuSearch.Text" xml:space="preserve">
+    <value>Найти...</value>
+  </data>
+	<data name="menuFindID.Text" xml:space="preserve">
+    <value>Найти по коду...</value>
+  </data>
+	<data name="menuSave.Text" xml:space="preserve">
+    <value>Сохранить...</value>
+  </data>
+	<data name="menuSavePart.Text" xml:space="preserve">
+    <value>Сохранить отдельные страницы...</value>
+  </data>
+	<data name="menuItemSaveSelected.Text" xml:space="preserve">
+    <value>Сохранить выделенное...</value>
+  </data>
+	<data name="menuItemSaveSelectedAsStamp.Text" xml:space="preserve">
+    <value>Сохранить выделенное как штамп...</value>
+  </data>
+	<data name="menuAddEForm.Text" xml:space="preserve">
+    <value>Добавить эл. форму текущему документу...</value>
+  </data>
+	<data name="menuAddToWork.Text" xml:space="preserve">
+    <value>Добавить в работу...</value>
+  </data>
+	<data name="menuWorkPlaces.Text" xml:space="preserve">
+    <value>Размещение в рабочих папках...</value>
+  </data>
+	<data name="menuEndWork.Text" xml:space="preserve">
+    <value>Завершить работу с документом</value>
+  </data>
+	<data name="menuFaxDescr.Text" xml:space="preserve">
+    <value>Изменить описание...</value>
+  </data>
+	<data name="menuSpam.Text" xml:space="preserve">
+    <value>Спам</value>
+  </data>
+	<data name="menuDocPropertes.Text" xml:space="preserve">
+    <value>Свойства...</value>
+  </data>
+	<data name="menuGotoPerson.Text" xml:space="preserve">
+    <value>Перейти к папке </value>
+  </data>
+	<data name="menuNewWindow.Text" xml:space="preserve">
+    <value>Открыть в отдельном окне </value>
+  </data>
+	<data name="menuDeletePart.Text" xml:space="preserve">
+    <value>Удалить часть документа</value>
+  </data>
+	<data name="menuDelete.Text" xml:space="preserve">
+    <value>Удалить из архива</value>
+  </data>
+	<data name="menuDeleteFromFound.Text" xml:space="preserve">
+    <value>Удалить из найденного</value>
+  </data>
+	<data name="menuItemExit.Text" xml:space="preserve">
+    <value>Выход из программы</value>
+  </data>
+	<data name="menuDoc.Text" xml:space="preserve">
+    <value>Документ</value>
+  </data>
+	<data name="menuRefresh.Text" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+	<data name="menuSettingsGroupOrder.Text" xml:space="preserve">
+    <value>Группировка...</value>
+  </data>
+	<data name="menuSettingsFilter.Text" xml:space="preserve">
+    <value>Фильтр...</value>
+  </data>
+	<data name="menuShowPagesPanel.Text" xml:space="preserve">
+    <value>Панель страниц</value>
+  </data>
+	<data name="menuShowWebPanel.Text" xml:space="preserve">
+    <value>Эл.форма под документом</value>
+  </data>
+	<data name="menuShowMessage.Text" xml:space="preserve">
+    <value>Отображать сообщения</value>
+  </data>
+	<data name="menuPageBack.Text" xml:space="preserve">
+    <value>Предыдущая</value>
+  </data>
+	<data name="menuPageForward.Text" xml:space="preserve">
+    <value>Следующая</value>
+  </data>
+	<data name="menuRotateCCW.Text" xml:space="preserve">
+    <value>Повернуть влево</value>
+  </data>
+	<data name="menuRotateCW.Text" xml:space="preserve">
+    <value>Повернуть вправо</value>
+  </data>
+	<data name="menuPageMoveBack.Text" xml:space="preserve">
+    <value>Сдвинуть назад</value>
+  </data>
+	<data name="menuPageMoveForward.Text" xml:space="preserve">
+    <value>Сдвинуть вперед</value>
+  </data>
+	<data name="menuItem6.Text" xml:space="preserve">
+    <value>Страница</value>
+  </data>
+	<data name="menuZoom.Text" xml:space="preserve">
+    <value>Выбрать масштаб</value>
+  </data>
+	<data name="menuZoomIn.Text" xml:space="preserve">
+    <value>Увеличить масштаб</value>
+  </data>
+	<data name="menuZoomOut.Text" xml:space="preserve">
+    <value>Уменьшить масштаб</value>
+  </data>
+	<data name="menuSelection.Text" xml:space="preserve">
+    <value>Выбрать фрагмент</value>
+  </data>
+	<data name="menuZoomSelection.Text" xml:space="preserve">
+    <value>Масштаб по фрагменту</value>
+  </data>
+	<data name="menuItem5.Text" xml:space="preserve">
+    <value>Масштаб</value>
+  </data>
+	<data name="menuDoc4.Text" xml:space="preserve">
+    <value>Вид</value>
+  </data>
+	<data name="menuShowNoteBar.Text" xml:space="preserve">
+    <value>Панель заметок</value>
+  </data>
+	<data name="mILine.Text" xml:space="preserve">
+    <value>Прямая</value>
+  </data>
+	<data name="mIFLine.Text" xml:space="preserve">
+    <value>Кривая</value>
+  </data>
+	<data name="mIHighlighter.Text" xml:space="preserve">
+    <value>Маркер</value>
+  </data>
+	<data name="mIRectangle.Text" xml:space="preserve">
+    <value>Прямоугольник</value>
+  </data>
+	<data name="mIHRectangle.Text" xml:space="preserve">
+    <value>Заполненный прямоугольник</value>
+  </data>
+	<data name="mIText.Text" xml:space="preserve">
+    <value>Текст</value>
+  </data>
+	<data name="mINote.Text" xml:space="preserve">
+    <value>Заметка</value>
+  </data>
+	<data name="mIStamp.Text" xml:space="preserve">
+    <value>Штамп</value>
+  </data>
+	<data name="miDSP.Text" xml:space="preserve">
+    <value>Для использования внутри компании</value>
+  </data>
+	<data name="mISelect.Text" xml:space="preserve">
+    <value>Выделение заметок</value>
+  </data>
+	<data name="mIView.Text" xml:space="preserve">
+    <value>Просмотр изображения</value>
+  </data>
+	<data name="mIHide.Text" xml:space="preserve">
+    <value>Не показывать</value>
+  </data>
+	<data name="mISelf.Text" xml:space="preserve">
+    <value>Только свои</value>
+  </data>
+	<data name="mIShow.Text" xml:space="preserve">
+    <value>Показывать все</value>
+  </data>
+	<data name="mINotes.Text" xml:space="preserve">
+    <value>Заметки</value>
+  </data>
+	<data name="menuSettingsMessages.Text" xml:space="preserve">
+    <value>Сообщения и подтверждения...</value>
+  </data>
+	<data name="menuSettingsMailingLists.Text" xml:space="preserve">
+    <value>Списки рассылки...</value>
+  </data>
+	<data name="menuSettingsFaxes.Text" xml:space="preserve">
+    <value>Отображение факсов...</value>
+  </data>
+	<data name="menuSettingsShow.Text" xml:space="preserve">
+    <value>Отображение сообщений...</value>
+  </data>
+	<data name="mIColumns.Text" xml:space="preserve">
+    <value>Колонки...</value>
+  </data>
+	<data name="menuColor1.Text" xml:space="preserve">
+    <value>как есть</value>
+  </data>
+	<data name="menuColor2.Text" xml:space="preserve">
+    <value>в градациях серого</value>
+  </data>
+	<data name="menuColor3.Text" xml:space="preserve">
+    <value>в черно-белом</value>
+  </data>
+	<data name="menuDoc5.Text" xml:space="preserve">
+    <value>Показывать цвета...</value>
+  </data>
+	<data name="menuScale1.Text" xml:space="preserve">
+    <value>оптимальное</value>
+  </data>
+	<data name="menuScale2.Text" xml:space="preserve">
+    <value>нормальное</value>
+  </data>
+	<data name="menuScale3.Text" xml:space="preserve">
+    <value>оттиск</value>
+  </data>
+	<data name="menuDoc6.Text" xml:space="preserve">
+    <value>Масштабирование...</value>
+  </data>
+	<data name="menuPrintSettings.Text" xml:space="preserve">
+    <value>Всегда отображать окно настроек печати</value>
+  </data>
+	<data name="menuSettingsScaner.Text" xml:space="preserve">
+    <value>Выбор сканера...</value>
+  </data>
+	<data name="menuSettingsLanguage.Text" xml:space="preserve">
+    <value>Выбор языка интерфейса...</value>
+  </data>
+	<data name="menuItem8.Text" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+	<data name="menuGotoWorkFolder.Text" xml:space="preserve">
+    <value>в рабочую папку</value>
+  </data>
+	<data name="menuGotoFind.Text" xml:space="preserve">
+    <value>к найденным документам</value>
+  </data>
+	<data name="menuGotoCatalog.Text" xml:space="preserve">
+    <value>в архив документов</value>
+  </data>
+	<data name="menuGotoFaxIn.Text" xml:space="preserve">
+    <value>к входящим факсам</value>
+  </data>
+	<data name="menuGotoScaner.Text" xml:space="preserve">
+    <value>к сканированным документам</value>
+  </data>
+	<data name="menuGoto.Text" xml:space="preserve">
+    <value>Перейти...</value>
+  </data>
+	<data name="menuPrintPage.Text" xml:space="preserve">
+    <value>страницу на печать</value>
+  </data>
+	<data name="menuPrintSelection.Text" xml:space="preserve">
+    <value>фрагмент на печать</value>
+  </data>
+	<data name="menuPrintAll.Text" xml:space="preserve">
+    <value>изображение на печать</value>
+  </data>
+	<data name="menuPrintDoc.Text" xml:space="preserve">
+    <value>документ на печать</value>
+  </data>
+	<data name="menuFolder.Text" xml:space="preserve">
+    <value>все документы папки на печать...</value>
+  </data>
+	<data name="menuSendMessage.Text" xml:space="preserve">
+    <value>сообщение сотруднику...</value>
+  </data>
+	<data name="menuSendFax.Text" xml:space="preserve">
+    <value>документ из офиса...</value>
+  </data>
+	<data name="menuItem3.Text" xml:space="preserve">
+    <value>Отправить...</value>
+  </data>
+	<data name="menuLinkOpenDoc.Text" xml:space="preserve">
+    <value>с открытым документом</value>
+  </data>
+	<data name="menuLinkWorkDoc.Text" xml:space="preserve">
+    <value>с документом в работе</value>
+  </data>
+	<data name="menuLinkDoc.Text" xml:space="preserve">
+    <value>с документом в архиве</value>
+  </data>
+	<data name="menuNewLink.Text" xml:space="preserve">
+    <value>Связать...</value>
+  </data>
+	<data name="menuOpenFolder.Text" xml:space="preserve">
+    <value>Подключить папку на диске...</value>
+  </data>
+	<data name="menuItem4.Text" xml:space="preserve">
+    <value>Папка</value>
+  </data>
+	<data name="TS_menuItemBetween.Text" xml:space="preserve">
+    <value>Под каталогом</value>
+  </data>
+	<data name="TS_menuItemLeft.Text" xml:space="preserve">
+    <value>Слева от документа</value>
+  </data>
+	<data name="TS_menuItemUnder.Text" xml:space="preserve">
+    <value>Под документом</value>
+  </data>
+	<data name="menuItemBetween.Text" xml:space="preserve">
+    <value>Под каталогом</value>
+  </data>
+	<data name="menuItemLeft.Text" xml:space="preserve">
+    <value>Слева от документа</value>
+  </data>
+	<data name="menuItemUnder.Text" xml:space="preserve">
+    <value>Под документом</value>
+  </data>
+	<data name="zoomCombo.Items5" xml:space="preserve">
+    <value>по окну</value>
+  </data>
+	<data name="zoomCombo.Items6" xml:space="preserve">
+    <value>по ширине</value>
+  </data>
+	<data name="zoomCombo.Items7" xml:space="preserve">
+    <value>по высоте</value>
+  </data>
+	<data name="zoomCombo.ToolTip" xml:space="preserve">
+    <value>Задайте масштаб изображения</value>
+  </data>
+	<data name="buttonSearch.ToolTipText" xml:space="preserve">
+    <value>Найти документ в архиве (F3)</value>
+  </data>
+	<data name="windowButton.ToolTipText" xml:space="preserve">
+    <value>Открыть в окне (Ctrl+W)</value>
+  </data>
+	<data name="scanButton.ToolTipText" xml:space="preserve">
+    <value>Сканировать новый документ</value>
+  </data>
+	<data name="propertiesButton.ToolTipText" xml:space="preserve">
+    <value>Свойства документа</value>
+  </data>
+	<data name="saveButton.ToolTipText" xml:space="preserve">
+    <value>Сохранить документ в архив (F2)</value>
+  </data>
+	<data name="savePartButton.ToolTipText" xml:space="preserve">
+    <value>Сохранить отдельные страницы как новый документ (Ctrl+F2)</value>
+  </data>
+	<data name="saveSelectedButton.ToolTipText" xml:space="preserve">
+    <value>Сохранить выделенный фрагмент документа</value>
+  </data>
+	<data name="refreshButton.ToolTipText" xml:space="preserve">
+    <value>Обновить список документов (F5)</value>
+  </data>
+	<data name="settingsGroupOrderButton.ToolTipText" xml:space="preserve">
+    <value>Группировка документов (F4)</value>
+  </data>
+	<data name="settingsFilterButton.ToolTipText" xml:space="preserve">
+    <value>Фильтр (Ctrl+F)</value>
+  </data>
+	<data name="openFolderButton.ToolTipText" xml:space="preserve">
+    <value>Подключить папку</value>
+  </data>
+	<data name="showPagesPanelButton.ToolTipText" xml:space="preserve">
+    <value>Отображать панель страниц</value>
+  </data>
+	<data name="showWebPanelButton.ToolTipText" xml:space="preserve">
+    <value>Отображать эл. форму под документом</value>
+  </data>
+	<data name="tBBShowMessage.ToolTipText" xml:space="preserve">
+    <value>Показывать сообщения по документу</value>
+  </data>
+	<data name="pageBackButton.ToolTipText" xml:space="preserve">
+    <value>Предыдущая страница</value>
+  </data>
+	<data name="pageForwardButton.ToolTipText" xml:space="preserve">
+    <value>Следующая страница</value>
+  </data>
+	<data name="zoomInButton.ToolTipText" xml:space="preserve">
+    <value>Увеличить масштаб</value>
+  </data>
+	<data name="zoomOutButton.ToolTipText" xml:space="preserve">
+    <value>Уменьшить масштаб</value>
+  </data>
+	<data name="zoomSelectionButton.ToolTipText" xml:space="preserve">
+    <value>Масштаб по фрагменту</value>
+  </data>
+	<data name="viewButton.ToolTipText" xml:space="preserve">
+    <value>Перемещение страницы документа</value>
+  </data>
+	<data name="selectAnnButton.ToolTipText" xml:space="preserve">
+    <value>Выделение заметок</value>
+  </data>
+	<data name="selectionButton.ToolTipText" xml:space="preserve">
+    <value>Выбрать фрагмент</value>
+  </data>
+	<data name="rotateCCWButton.ToolTipText" xml:space="preserve">
+    <value>Повернуть против часовой стрелки</value>
+  </data>
+	<data name="rotateCWButton.ToolTipText" xml:space="preserve">
+    <value>Повернуть по часовой стрелке</value>
+  </data>
+	<data name="printButton.ToolTipText" xml:space="preserve">
+    <value>Печать страницы</value>
+  </data>
+	<data name="sendMessageButton.ToolTipText" xml:space="preserve">
+    <value>Отправить сообщение (F7)</value>
+  </data>
+	<data name="sendFaxButton.ToolTipText" xml:space="preserve">
+    <value>Отправить документ из офиса</value>
+  </data>
+	<data name="linksButton.ToolTipText" xml:space="preserve">
+    <value>Связи документа</value>
+  </data>
+	<data name="tbbGoTo.Text" xml:space="preserve">
+    <value>Перейти</value>
+  </data>
+	<data name="tbbGoTo.ToolTipText" xml:space="preserve">
+    <value>Перейти к документам в ...</value>
+  </data>
+	<data name="gotoWorkFolderButton.ToolTipText" xml:space="preserve">
+    <value>Перейти к документам в работе</value>
+  </data>
+	<data name="gotoScanerButton.ToolTipText" xml:space="preserve">
+    <value>Перейти к сканированным документам</value>
+  </data>
+	<data name="gotoFaxInButton.ToolTipText" xml:space="preserve">
+    <value>Перейти к входящим факсам</value>
+  </data>
+	<data name="selectAnnButton1.ToolTipText" xml:space="preserve">
+    <value>Выделение заметок</value>
+  </data>
+	<data name="markerButton.ToolTipText" xml:space="preserve">
+    <value>Маркер</value>
+  </data>
+	<data name="rectangleButton.ToolTipText" xml:space="preserve">
+    <value>Прямоугольник</value>
+  </data>
+	<data name="textButton.ToolTipText" xml:space="preserve">
+    <value>Вставить текстовую пометку</value>
+  </data>
+	<data name="NoteButton.ToolTipText" xml:space="preserve">
+    <value>Вставка заметки</value>
+  </data>
+	<data name="mIShowWindow.Text" xml:space="preserve">
+    <value>Открыть</value>
+  </data>
+	<data name="mIClose.Text" xml:space="preserve">
+    <value>Закрыть программу</value>
+  </data>
+	<data name="notifyIcon.Text" xml:space="preserve">
+    <value>Архив документов</value>
+  </data>
+	<data name="$this.Text" xml:space="preserve">
+    <value>Архив документов</value>
+  </data>
+	<data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+	<data name="imageStampButton.ToolTipText" xml:space="preserve">
+    <value>Штамп</value>
+  </data>
+	<data name="menuHelp.Text" xml:space="preserve">
+    <value>?</value>
+  </data>
+	<data name="pageNum.ToolTip" xml:space="preserve">
+    <value>Номер текущей страницы</value>
+  </data>
+	<data name="menuSettingsLinkShow.Text" xml:space="preserve">
+    <value>Отображения связей...</value>
+  </data>
+	<data name="statusBarPanelDSP.ToolTipText" xml:space="preserve">
+    <value>Изображение документа для использования внутри компании</value>
+  </data>
+	<data name="dspStampButton.ToolTipText" xml:space="preserve">
+    <value>Пометить "ДСП" - для использования внутри компании</value>
+  </data>
+</root>
