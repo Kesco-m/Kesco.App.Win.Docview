@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Main.Message" xml:space="preserve">
+    <value>Dokumentide arhiiv ei ole kättesaadav</value>
+  </data>
+  <data name="Search.NotFound.Message1" xml:space="preserve">
+    <value>Dokumendid ei ole leitud.</value>
+  </data>
+  <data name="Search.NotFound.Message2" xml:space="preserve">
+    <value>Kas soovite muuta otsingukriteeriumid ja korrata päringut?</value>
+  </data>
+  <data name="Search.NotFound.Title" xml:space="preserve">
+    <value>Midagi ei ole leitud</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Hoiatus</value>
+  </data>
+  <data name="Main.Error1" xml:space="preserve">
+    <value>Viga põhivormi käivitamisel</value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>Kinnitus</value>
+  </data>
+  <data name="MainForm.MainFormDialog.AnalyzeArgsFileName.Message1" xml:space="preserve">
+    <value>Salvesta trükitud dokument dokumendi kujutisena</value>
+  </data>
+  <data name="MainForm.MainFormDialog.AnalyzeArgsFileName.Title1" xml:space="preserve">
+    <value>Trükitud dokument</value>
+  </data>
+  <data name="MainForm.MainFormDialog.On_DocProperties.Message1" xml:space="preserve">
+    <value>Fakse EI OLE saadetud numbrile:</value>
+  </data>
+  <data name="MainForm.MainFormDialog.On_DocProperties.Message2" xml:space="preserve">
+    <value> jaoks: '</value>
+  </data>
+  <data name="MainForm.MainFormDialog.On_DocProperties.Message3" xml:space="preserve">
+    <value>Ei ole saadetud!' (</value>
+  </data>
+  <data name="MainForm.MainFormDialog.On_DocProperties.Message4" xml:space="preserve">
+    <value>Ei ole saadetud - saadetud uuesti.' (</value>
+  </data>
+  <data name="MainForm.MainFormDialog.On_DocProperties.Title1" xml:space="preserve">
+    <value>Väljamineva faksi omadused</value>
+  </data>
+  <data name="MainForm.MainFormDialog.On_DocProperties.Message5" xml:space="preserve">
+    <value>Viga faksi staatuse lugemisel.</value>
+  </data>
+  <data name="Main.Error2" xml:space="preserve">
+    <value>Viga funktsioonis Main(): </value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>Fail</value>
+  </data>
+  <data name="MainForm.MainFormDialog.On_FaxDescr.Message1" xml:space="preserve">
+    <value>Faksi kirjeldus</value>
+  </data>
+  <data name="MainForm.MainFormDialog.On_FaxDescr.Title1" xml:space="preserve">
+    <value>Sisestage faksi kirjeldust:</value>
+  </data>
+  <data name="MainForm.MainFormDialog.On_DeleteDoc.Message1" xml:space="preserve">
+    <value>Te kavatsete kustutada dokumenti</value>
+  </data>
+  <data name="MainForm.MainFormDialog.On_DeleteDoc.Message2" xml:space="preserve">
+    <value> arhiivist.</value>
+  </data>
+  <data name="MainForm.MainFormDialog.On_DeleteDoc.Message3" xml:space="preserve">
+    <value>Dokument kustutatakse lõplikult taastamise võimaluseta.</value>
+  </data>
+  <data name="MainForm.MainFormDialog.On_DeleteDoc.Message4" xml:space="preserve">
+    <value>Kas Te tõesti soovite kustutada dokumenti arhiivist?</value>
+  </data>
+  <data name="MainForm.MainFormDialog.RealAnalyzeCurrentCell.Message1" xml:space="preserve">
+    <value>Vale dokumendi kood</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Viga</value>
+  </data>
+  <data name="ToWidth" xml:space="preserve">
+    <value>laiuse järgi</value>
+  </data>
+  <data name="ToHeigth" xml:space="preserve">
+    <value>kõrguse järgi</value>
+  </data>
+  <data name="ToWindow" xml:space="preserve">
+    <value>akna järgi</value>
+  </data>
+  <data name="MainForm.MainFormDialog.MainFormDialog.Error1" xml:space="preserve">
+    <value>Ei saa luua ühendust dokumentide arhiivi AB serveriga.</value>
+  </data>
+  <data name="MainForm.MainFormDialog.MainFormDialog.Error2" xml:space="preserve">
+    <value>Ei saa luua ühendust raamatupidamise AB serveriga.</value>
+  </data>
+  <data name="MainForm.MainFormDialog.MainFormDialog_KeyDown.Message1" xml:space="preserve">
+    <value>Ei saa leida jooksvat isikut nimekirjast</value>
+  </data>
+  <data name="MainForm.MainFormDialog.MainFormDialog_KeyDown.Message2" xml:space="preserve">
+    <value>Isiku kood:</value>
+  </data>
+  <data name="MainForm.MainFormDialog.GotMessage.Message1" xml:space="preserve">
+    <value>Saabus uus sõnum dokumendi kohta</value>
+  </data>
+  <data name="MainForm.MainFormDialog.GotMessage.Message2" xml:space="preserve">
+    <value>Kas lähen sellele dokumendile üle?</value>
+  </data>
+  <data name="MainForm.MainFormDialog.GotMessage.Title1" xml:space="preserve">
+    <value>Uus sõnum</value>
+  </data>
+  <data name="MainForm.MainFormDialog.SelectWorkDoc.Message1" xml:space="preserve">
+    <value>Ei saa leida töökataloogi dokumendi jaoks koodiga</value>
+  </data>
+  <data name="MainForm.MainFormDialog.textShow.Message1" xml:space="preserve">
+    <value>[Puudub grupp]</value>
+  </data>
+  <data name="MainForm.MainFormDialog.On_Refresh.Message1" xml:space="preserve">
+    <value>Viga uuendamisel:</value>
+  </data>
+  <data name="MainForm.MainFormDialog.Zoom.Minimum" xml:space="preserve">
+    <value>Minimaalne suurendus : </value>
+  </data>
+  <data name="InputError" xml:space="preserve">
+    <value>Sisestuse viga</value>
+  </data>
+  <data name="MainForm.MainFormDialog.Zoom.Maximum" xml:space="preserve">
+    <value>Maksimaalne suurendus : </value>
+  </data>
+  <data name="MainForm.MainFormDialog.menuDoc_Popup.Message1" xml:space="preserve">
+    <value>[Nimeta]</value>
+  </data>
+  <data name="MainForm.MainFormDialog.SelectDBDoc.Message1" xml:space="preserve">
+    <value>Antud dokument on kättesaadav organisatsiooni arhiivist</value>
+  </data>
+  <data name="MainForm.MainFormDialog.SelectDBDoc.Message2" xml:space="preserve">
+    <value>Kas avan antud organisatsiooni arhiivi?</value>
+  </data>
+  <data name="MainForm.MainFormDialog.SelectDBDoc.Title1" xml:space="preserve">
+    <value>Ei saa avada dokumenti</value>
+  </data>
+  <data name="MainForm.MainFormDialog.SelectDBDoc.Message3" xml:space="preserve">
+    <value>Antud dokument on kättesaadav vaid üldises arhiivis</value>
+  </data>
+  <data name="MainForm.MainFormDialog.SelectDBDoc.Message4" xml:space="preserve">
+    <value>Kas avan üldist arhiivi?</value>
+  </data>
+  <data name="ScanedDoc" xml:space="preserve">
+    <value>Skaneeritud dokument</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>Lehekülg</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>Saatja</value>
+  </data>
+  <data name="SubFormDialog.Text1" xml:space="preserve">
+    <value>Uue elektroonilise vormi loomine</value>
+  </data>
+  <data name="Document" xml:space="preserve">
+    <value>Dokument</value>
+  </data>
+  <data name="MainForm.FolderSelectDialog.buttonOK_Click.Message1" xml:space="preserve">
+    <value>juba eksisteerib kataloogis</value>
+  </data>
+  <data name="MainForm.FolderSelectDialog.buttonOK_Click.Title1" xml:space="preserve">
+    <value>Dokument on juba töös</value>
+  </data>
+  <data name="ConfirmTypeDialog.TypeString.Message1" xml:space="preserve">
+    <value>Selle dokumenditüübil on seos dokumendiga tüübiga</value>
+  </data>
+  <data name="ConfirmTypeDialog.TypeString.Message2" xml:space="preserve">
+    <value>Kas olete kindel, et soovite luua antud tüüpi dokumenti?</value>
+  </data>
+  <data name="Environment.ReadData.Error" xml:space="preserve">
+    <value>Ei saa andmeid töökataloogide lugemise kohta</value>
+  </data>
+  <data name="Environment.CheckLinkDoc.Error1" xml:space="preserve">
+    <value>Tagasiside juba eksisteerib</value>
+  </data>
+  <data name="Environment.CheckLinkDoc.Error2" xml:space="preserve">
+    <value>Ei saa luua seost, kuna</value>
+  </data>
+  <data name="FolderDialog" xml:space="preserve">
+    <value>Valige tee kataloogini monteerimiseks</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>Näita</value>
+  </data>
+  <data name="Rights" xml:space="preserve">
+    <value>Õigused</value>
+  </data>
+  <data name="ID" xml:space="preserve">
+    <value>Kood</value>
+  </data>
+  <data name="DocumentType" xml:space="preserve">
+    <value>Dokumendi tüüp</value>
+  </data>
+  <data name="DocumentNumber" xml:space="preserve">
+    <value>Dokumendi number</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Kirjeldus</value>
+  </data>
+  <data name="LoopLinkDialog.ChooseDocDialog_Load.Message2" xml:space="preserve">
+    <value>Ligipääs muutmiseks</value>
+  </data>
+  <data name="Available" xml:space="preserve">
+    <value>Kättesaadav</value>
+  </data>
+  <data name="NotAvailable" xml:space="preserve">
+    <value>ei ole kättesaadav</value>
+  </data>
+  <data name="LoopLinkDialog.ChooseDocDialog_Load.Message1" xml:space="preserve">
+    <value>Ei saa luua seost dokumendi {0} (alusdokument) ja dokumendi {1} (alamdokument) vahel, kuna nendel on tagasiside järgmiste dokumentide kaudu:</value>
+  </data>
+  <data name="MergeDocsDialog.buttonOK_Click.Message1" xml:space="preserve">
+    <value>Tähelepanu, ühendamise tulemusena koos kustutava dokumendiga kustutatakse ka elektrooniline vorm</value>
+  </data>
+  <data name="MergeDocsDialog.buttonOK_Click.Message2" xml:space="preserve">
+    <value>järgmisel põhjusel</value>
+  </data>
+  <data name="MergeDocsDialog.buttonOK_Click.Message3" xml:space="preserve">
+    <value>Elektroonilised vormid on olemas mõlemal dokumendil</value>
+  </data>
+  <data name="MergeDocsDialog.buttonOK_Click.Message4" xml:space="preserve">
+    <value>Dokumentide tüübid ei lange kokku</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Jätkan?</value>
+  </data>
+  <data name="MergeDocsDialog.buttonOK_Click.Title1" xml:space="preserve">
+    <value>Elektroonilise vormi kustutamine</value>
+  </data>
+  <data name="Absent" xml:space="preserve">
+    <value>puudub</value>
+  </data>
+  <data name="SettingsMessagesAndConfirmsDialog.buttonOK_Click.Message1" xml:space="preserve">
+    <value>Arv peab olema vahemikus</value>
+  </data>
+  <data name="SettingsMessagesAndConfirmsDialog.buttonOK_Click.Message2" xml:space="preserve">
+    <value> kuni</value>
+  </data>
+  <data name="SettingsMessagesAndConfirmsDialog.buttonOK_Click.Message3" xml:space="preserve">
+    <value>Vale arvu formaat. Korrake sisestust.</value>
+  </data>
+  <data name="FaxPropertiButtonControl.Message1" xml:space="preserve">
+    <value>Mine üle dokumendile arhiivist</value>
+  </data>
+  <data name="DocProperties.DocProperties_Load.Message1" xml:space="preserve">
+    <value>Salvesta dokument arhiivi</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Salvesta</value>
+  </data>
+  <data name="DocProperties.buttonOK_Click.Message1" xml:space="preserve">
+    <value>Korrake sisestust</value>
+  </data>
+  <data name="DocProperties.buttonOK_Click.Message2" xml:space="preserve">
+    <value>Te ei määranud ühtegi</value>
+  </data>
+  <data name="DocProperties.buttonOK_Click.Message3" xml:space="preserve">
+    <value>Te ei määranud dokumendi numbrit. Jätkan?</value>
+  </data>
+  <data name="DocProperties.buttonOK_Click.Message4" xml:space="preserve">
+    <value>Teie poolt määratud dokumendi number ei sisalda numbreid. Jätkan?</value>
+  </data>
+  <data name="DocProperties.buttonOK_Click.Message5" xml:space="preserve">
+    <value>Te ei määranud dokumendi kuupäeva. Jätkan?</value>
+  </data>
+  <data name="DocProperties.buttonOK_Click.Message6" xml:space="preserve">
+    <value>Te määrasite vaid ühte</value>
+  </data>
+  <data name="DocProperties.buttonOK_Click.Message7" xml:space="preserve">
+    <value>Enamus dokumentide jaoks tuleb määrata vähemalt kaks</value>
+  </data>
+  <data name="DocProperties.buttonOK_Click.Message8" xml:space="preserve">
+    <value>Salvesta dokument ühega</value>
+  </data>
+  <data name="DocProperties.SaveDoc.Message1" xml:space="preserve">
+    <value>Sel ajal, kui te muutsite dokumendi omadusi, seda salvestas teine töötaja.</value>
+  </data>
+  <data name="Change" xml:space="preserve">
+    <value>Muudetud</value>
+  </data>
+  <data name="DateChange" xml:space="preserve">
+    <value>Muudetud</value>
+  </data>
+  <data name="DocProperties.SaveDoc.Message2" xml:space="preserve">
+    <value>Kas asendan dokumenti?</value>
+  </data>
+  <data name="DocProperties.SaveDoc.Title1" xml:space="preserve">
+    <value>Dokument muudetud.</value>
+  </data>
+  <data name="Properties.PropertiesFolderRuleSearchDialog.Message1" xml:space="preserve">
+    <value>Uus reegel kataloogi jaoks</value>
+  </data>
+  <data name="Properties.PropertiesFolderRuleSearchDialog.Message2" xml:space="preserve">
+    <value>Muuda reglit kataloogi jaoks</value>
+  </data>
+  <data name="FolderNotExist" xml:space="preserve">
+    <value>Kataloog enam ei eksisteeri</value>
+  </data>
+  <data name="Properties.PropertiesFolderRuleSearchDialog.SaveRuleButton_Click.Message2" xml:space="preserve">
+    <value>Reegel juba eksisteerib</value>
+  </data>
+  <data name="Properties.PropertiesFolderRuleSearchDialog.SaveRuleButton_Click.Message3" xml:space="preserve">
+    <value>Parameetrid reegli jaoks ei ole määratud</value>
+  </data>
+  <data name="Properties.PropertiesFolderRuleSearchDialog.SaveRuleButton_Click.Message4" xml:space="preserve">
+    <value>Määrake reegli nimetus</value>
+  </data>
+  <data name="Properties.PropertiesFolderRuleSearchDialog.SaveRuleButton_Click.Message5" xml:space="preserve">
+    <value>Reegel selle nimetusega juba eksisteerib</value>
+  </data>
+  <data name="Properties.PropertiesFolderRuleViewDialog.Text1" xml:space="preserve">
+    <value>Dokument satub kataloogi</value>
+  </data>
+  <data name="Properties.PropertiesFolderRuleViewDialog.Text2" xml:space="preserve">
+    <value>kui sissetulevad sõnumid rahuldavad ühte reeglitest:</value>
+  </data>
+  <data name="Properties.PropertiesFolderRuleViewDialog.DeleteRuleButton_Click.Message1" xml:space="preserve">
+    <value>Kas Te tõesti soovite kustutada valitud reeglid?</value>
+  </data>
+  <data name="Properties.PropertiesFolderRuleViewDialog.DeleteRuleButton_Click.Title1" xml:space="preserve">
+    <value>Reegli kustutamine</value>
+  </data>
+  <data name="Properties.PropertiesScanDialog.buttonSave_Click.Message1" xml:space="preserve">
+    <value>Kirjeldus ei tohi sisaldada järgmisi sümboleid:</value>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>Töötaja</value>
+  </data>
+  <data name="Access" xml:space="preserve">
+    <value>Ligipääs</value>
+  </data>
+  <data name="Full" xml:space="preserve">
+    <value>Täis</value>
+  </data>
+  <data name="ReadOnly" xml:space="preserve">
+    <value>Ainult lugemine</value>
+  </data>
+  <data name="FolderTree.ShareWorkFolder.buttonRemove_Click.Message1" xml:space="preserve">
+    <value>Kas tõesti soovite eemaldada valitud töötajad nimekirjast?</value>
+  </data>
+  <data name="FolderTree.FolderNodes.DocumentNode.Message1" xml:space="preserve">
+    <value>Peida dokument</value>
+  </data>
+  <data name="MainDocuments" xml:space="preserve">
+    <value>Alusdokumendid</value>
+  </data>
+  <data name="SubsequentDocuments" xml:space="preserve">
+    <value>Alamdokumendid</value>
+  </data>
+  <data name="Archive" xml:space="preserve">
+    <value>Arhiiv</value>
+  </data>
+  <data name="FolderTree.FolderNodes.CatalogNode.Message1" xml:space="preserve">
+    <value>Anna kataloog töötajale üle</value>
+  </data>
+  <data name="SelectArchive" xml:space="preserve">
+    <value>Vali arhiiv</value>
+  </data>
+  <data name="FolderTree.FolderNodes.CatalogNode.UserDialog_DialogEvent.Message1" xml:space="preserve">
+    <value>Kõik dokumendid tüübiga</value>
+  </data>
+  <data name="FolderTree.FolderNodes.CatalogNode.UserDialog_DialogEvent.Message2" xml:space="preserve">
+    <value>mis on seotud</value>
+  </data>
+  <data name="FolderTree.FolderNodes.CatalogNode.UserDialog_DialogEvent.Message3" xml:space="preserve">
+    <value>antakse üle töötajale</value>
+  </data>
+  <data name="FolderTree.FolderNodes.CatalogNode.UserDialog_DialogEvent.Message4" xml:space="preserve">
+    <value>isiklikku arhiivi</value>
+  </data>
+  <data name="FolderTree.FolderNodes.CatalogNode.UserDialog_DialogEvent.Title1" xml:space="preserve">
+    <value>Arhiivkataloogi üleandmine</value>
+  </data>
+  <data name="Scaner" xml:space="preserve">
+    <value>Skanner</value>
+  </data>
+  <data name="InWork" xml:space="preserve">
+    <value>Töös</value>
+  </data>
+  <data name="CreateFolder" xml:space="preserve">
+    <value>Loo kataloog</value>
+  </data>
+  <data name="Rename" xml:space="preserve">
+    <value>Nimeta ümber</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Kustuta</value>
+  </data>
+  <data name="SharedAccess" xml:space="preserve">
+    <value>Üldine ligipääs</value>
+  </data>
+  <data name="RulesSort" xml:space="preserve">
+    <value>Dokumentide sorteerimisreeglid</value>
+  </data>
+  <data name="FolderName" xml:space="preserve">
+    <value>Kataloogi nimi</value>
+  </data>
+  <data name="FolderNameInput" xml:space="preserve">
+    <value>Sisestage kataloogi nimi</value>
+  </data>
+  <data name="NewFolder" xml:space="preserve">
+    <value>Uus kataloog</value>
+  </data>
+  <data name="FolderTree.FolderNodes.WorkFolderNode.deleteItem_Click.Message1" xml:space="preserve">
+    <value>Kas tõesti soovite kustutada kataloogi kõikide alamkataloogidega?</value>
+  </data>
+  <data name="FolderTree.FolderNodes.WorkFolderNode.deleteItem_Click.Message2" xml:space="preserve">
+    <value>Sel juhul lõpetatakse tööd kõikide dokumentidega nendes kataloogides.</value>
+  </data>
+  <data name="SharedFolders" xml:space="preserve">
+    <value>Üldised kataloogid</value>
+  </data>
+  <data name="Properties" xml:space="preserve">
+    <value>Omadused</value>
+  </data>
+  <data name="DocGrid.InfoGrid.FormatCell.Error1" xml:space="preserve">
+    <value>Pesa formateerimise katse</value>
+  </data>
+  <data name="FolderTree.FolderNodes.FoundNode.Title1" xml:space="preserve">
+    <value>Leitud (Päringud)</value>
+  </data>
+  <data name="ToChange" xml:space="preserve">
+    <value>Muuda</value>
+  </data>
+  <data name="CreateInquiry" xml:space="preserve">
+    <value>Loo päring</value>
+  </data>
+  <data name="Find" xml:space="preserve">
+    <value>leitud</value>
+  </data>
+  <data name="FindID" xml:space="preserve">
+    <value>Otsi koodi järgi</value>
+  </data>
+  <data name="InquiryName" xml:space="preserve">
+    <value>Päringu nimi</value>
+  </data>
+  <data name="InquiryNameInput" xml:space="preserve">
+    <value>Sisestage päringu nimi</value>
+  </data>
+  <data name="FolderTree.FolderNodes.FoundNode.Rename_DialogEvent.Message1" xml:space="preserve">
+    <value>Päring selle nimega juba eksisteerib</value>
+  </data>
+  <data name="FolderTree.FolderNodes.FoundNode.Rename_DialogEvent.Message2" xml:space="preserve">
+    <value>Asendan?</value>
+  </data>
+  <data name="FolderTree.FolderNodes.FoundNode.Rename_DialogEvent.Title1" xml:space="preserve">
+    <value>Päringu nime muutmine</value>
+  </data>
+  <data name="FolderTree.FolderNodes.FoundNode.deleteItem_Click.Message1" xml:space="preserve">
+    <value>Kas Te tõesti soovite kustutada päringut</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message1" xml:space="preserve">
+    <value>Lisa elektrooniline vorm jooksvale dokumendile</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message2" xml:space="preserve">
+    <value>Loo alamdokument</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message3" xml:space="preserve">
+    <value>Lisa töösse</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message4" xml:space="preserve">
+    <value>Lõpeta töö dokumendiga</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message5" xml:space="preserve">
+    <value>Paigutus töökataloogides</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message6" xml:space="preserve">
+    <value>Kustuta arhiivist</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message7" xml:space="preserve">
+    <value>Saada sõnum</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message8" xml:space="preserve">
+    <value>Kustuta leitud artiklitest</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message9" xml:space="preserve">
+    <value>Märgi sõnumid loetuna</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message10" xml:space="preserve">
+    <value>Mine üle kataloogi</value>
+  </data>
+  <data name="Of" xml:space="preserve">
+    <value>alates</value>
+  </data>
+  <data name="DocGrid.Styles.FaxesInStyle.Message1" xml:space="preserve">
+    <value>Muuda kirjeldus</value>
+  </data>
+  <data name="IncomingFax" xml:space="preserve">
+    <value>Faks sisse</value>
+  </data>
+  <data name="Received" xml:space="preserve">
+    <value>saadud</value>
+  </data>
+  <data name="Sender" xml:space="preserve">
+    <value>Saatja:</value>
+  </data>
+  <data name="DocGrid.Styles.FaxesInStyle.DocStringToSave.Message1" xml:space="preserve">
+    <value>Faks on kättesaadud</value>
+  </data>
+  <data name="OutgoingFax" xml:space="preserve">
+    <value>Faks välja</value>
+  </data>
+  <data name="Sended" xml:space="preserve">
+    <value>saadetud</value>
+  </data>
+  <data name="SendFax" xml:space="preserve">
+    <value>Faks saadetud</value>
+  </data>
+  <data name="Reciever" xml:space="preserve">
+    <value>Saaja:</value>
+  </data>
+  <data name="Spam" xml:space="preserve">
+    <value>Rämpspost</value>
+  </data>
+  <data name="AddPerson" xml:space="preserve">
+    <value>Lisa isik</value>
+  </data>
+  <data name="Blocks.Person.Message1" xml:space="preserve">
+    <value>isiki ei ole määratud</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Kuupäev</value>
+  </data>
+  <data name="LocalDate" xml:space="preserve">
+    <value>Kohalik loomise aeg</value>
+  </data>
+  <data name="ChangeDate" xml:space="preserve">
+    <value>Muutmise aeg</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Sõnum</value>
+  </data>
+  <data name="Num" xml:space="preserve">
+    <value>№</value>
+  </data>
+  <data name="SimilarDocsDialog.ChooseDocDialog_Load.Message1" xml:space="preserve">
+    <value>Arhiivist leitud</value>
+  </data>
+  <data name="SimilarDocsDialog.ChooseDocDialog_Load.Message2" xml:space="preserve">
+    <value>sarnane dokument</value>
+  </data>
+  <data name="SimilarDocsDialog.ChooseDocDialog_Load.Message3" xml:space="preserve">
+    <value>sarnast dokumenti</value>
+  </data>
+  <data name="SimilarDocsDialog.ChooseDocDialog_Load.Message4" xml:space="preserve">
+    <value>sarnast dokumenti</value>
+  </data>
+  <data name="SimilarDocsDialog.ChooseDocDialog_Load.Message5" xml:space="preserve">
+    <value>[number ei ole määratud]</value>
+  </data>
+  <data name="SimilarDocsDialog.ChooseDocDialog_Load.Message6" xml:space="preserve">
+    <value>[kuupäev ei ole määratud]</value>
+  </data>
+  <data name="JoinError" xml:space="preserve">
+    <value>Ühendamise viga</value>
+  </data>
+  <data name="SimilarDocsDialog.buttonMerge_Click.Message1" xml:space="preserve">
+    <value>Mõlemad dokumendid on allkirjastatud, ühendamine ei ole võimalik</value>
+  </data>
+  <data name="SavePart" xml:space="preserve">
+    <value>Salvesta osa</value>
+  </data>
+  <data name="SaveSelected" xml:space="preserve">
+    <value>Salvesta valitud</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Uuenda</value>
+  </data>
+  <data name="OpenNewWindow" xml:space="preserve">
+    <value>Ava uues aknas</value>
+  </data>
+  <data name="NeedReload" xml:space="preserve">
+    <value>Keele muutmiseks tuleb käivitada arhiiv uuesti. Käivitan arhiiv uuesti?</value>
+  </data>
+  <data name="MainFormDialog.ShowErrorAndMessageWindow.Message1" xml:space="preserve">
+    <value>Mitte kõik sõnumid olid saadetud</value>
+  </data>
+  <data name="MainFormDialog.ShowErrorAndMessageWindow.Title1" xml:space="preserve">
+    <value>Viga sõnumite saatmisel</value>
+  </data>
+  <data name="SettingsMessagesAndConfirmsDialog.buttonOk_Click.Message4" xml:space="preserve">
+    <value>Ribakoodi lugeja kasutamise muutmiseks tuleb käivitada arhiiv uuest. Kas käivitan uuesti praegu?</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message11" xml:space="preserve">
+    <value>Loo vastus</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message12" xml:space="preserve">
+    <value>Skaneeri jooksva dokumendi kujutist</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message13" xml:space="preserve">
+    <value>Lisa jooksva dokumendi uus kujutis</value>
+  </data>
+  <data name="SubFormDialog.Text2" xml:space="preserve">
+    <value>Vastuse loomine</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nimi</value>
+  </data>
+  <data name="MailFrom" xml:space="preserve">
+    <value>Kellelt</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Teema</value>
+  </data>
+  <data name="Receive" xml:space="preserve">
+    <value>Saadud</value>
+  </data>
+  <data name="Spent" xml:space="preserve">
+    <value>Liigutatud</value>
+  </data>
+  <data name="ChangeSearch" xml:space="preserve">
+    <value>Muuda otsinguparameetrid</value>
+  </data>
+  <data name="Read" xml:space="preserve">
+    <value>Loetud</value>
+  </data>
+  <data name="DeleteFolder" xml:space="preserve">
+    <value>Kustutan kataloogi?</value>
+  </data>
+  <data name="MoveOrCopyMessage" xml:space="preserve">
+    <value>Liiguta või kopeeri kataloogi:</value>
+  </data>
+  <data name="DeleteMessage" xml:space="preserve">
+    <value>Kustuta sõnum</value>
+  </data>
+  <data name="ReceivedMessage" xml:space="preserve">
+    <value>Saadud uus sõnum. Avan lugemiseks?</value>
+  </data>
+  <data name="OutcomingFax" xml:space="preserve">
+    <value>Faks välja</value>
+  </data>
+  <data name="ArchiveDoc" xml:space="preserve">
+    <value>Arhiiv</value>
+  </data>
+  <data name="Inquiries" xml:space="preserve">
+    <value>Päringud</value>
+  </data>
+  <data name="Found" xml:space="preserve">
+    <value>Leitud</value>
+  </data>
+  <data name="InWorkDoc" xml:space="preserve">
+    <value>Töös</value>
+  </data>
+  <data name="IncomingFaxDoc" xml:space="preserve">
+    <value>Faks sisse</value>
+  </data>
+  <data name="OuterScaner" xml:space="preserve">
+    <value>Väline skanner</value>
+  </data>
+  <data name="EditPersons" xml:space="preserve">
+    <value>isikute muutmine</value>
+  </data>
+  <data name="CancelEditPersons" xml:space="preserve">
+    <value>Dokumendi isikute muutmise katkestus</value>
+  </data>
+  <data name="RedoEditPersons" xml:space="preserve">
+    <value>Dokumendi isikute muutmise tagastus</value>
+  </data>
+  <data name="EditDocProp" xml:space="preserve">
+    <value>dokumendi omaduste muutmine</value>
+  </data>
+  <data name="UndoEditDocProp" xml:space="preserve">
+    <value>Dokumendi omaduste muutmise katkestus</value>
+  </data>
+  <data name="RedoEditDocProp" xml:space="preserve">
+    <value>Dokumendi omaduste taastamine</value>
+  </data>
+  <data name="RemoveDocFromWork" xml:space="preserve">
+    <value>eemaldamine tööst</value>
+  </data>
+  <data name="UndoRemoveDocFromWork" xml:space="preserve">
+    <value>Dokumendi {0} tööst eemaldamise katkestus</value>
+  </data>
+  <data name="RedoRemoveDocFromWork" xml:space="preserve">
+    <value>Dokumendi {0} tööst eemaldamise tagastus</value>
+  </data>
+  <data name="AddDocToWork" xml:space="preserve">
+    <value>lisatud töösse</value>
+  </data>
+  <data name="UndoAddDocToWork" xml:space="preserve">
+    <value>Dokumendi  {0} töösse lisamise katkestus</value>
+  </data>
+  <data name="RedoAddDocToWork" xml:space="preserve">
+    <value>Tagasta dokumendi {0} lisamine töösse</value>
+  </data>
+  <data name="AddLink" xml:space="preserve">
+    <value>seose lisamine</value>
+  </data>
+  <data name="UndoAddLink" xml:space="preserve">
+    <value>Seose loomise katkestus {0} ja {1} vahel</value>
+  </data>
+  <data name="RedoAddLink" xml:space="preserve">
+    <value>Tagasta seose loomist  {0} ja  {1} vahel</value>
+  </data>
+  <data name="RemoveLink" xml:space="preserve">
+    <value>seose kustutamine</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>EST</value>
+  </data>
+  <data name="Appointment" xml:space="preserve">
+    <value>Elemendid tüübiga "Kohtumine"</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Kotakt</value>
+  </data>
+  <data name="Journal" xml:space="preserve">
+    <value>Elemendid tüübiga "Päevik"</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Elemendid tüübiga "Post"</value>
+  </data>
+  <data name="StickyNote" xml:space="preserve">
+    <value>Elemendid tüübiga "Märkmed"</value>
+  </data>
+  <data name="Task" xml:space="preserve">
+    <value>Elemendid tüübiga "Ülesanne"</value>
+  </data>
+  <data name="DeleteFolderException" xml:space="preserve">
+    <value>Kataloog selle nimega juba eksisteerib. Kasutage teist nimetust.</value>
+  </data>
+  <data name="FolderContent" xml:space="preserve">
+    <value>Kataloogi sisu</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>Ок</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Loobu</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Loo</value>
+  </data>
+  <data name="MoveFolder" xml:space="preserve">
+    <value>Liiguta</value>
+  </data>
+  <data name="CopyFolder" xml:space="preserve">
+    <value>Kopeeri</value>
+  </data>
+  <data name="MoveOrCopyFolder" xml:space="preserve">
+    <value>Liiguta või kopeeri valitud elemendid kataloogi</value>
+  </data>
+  <data name="RenameCurrentFolder" xml:space="preserve">
+    <value>Nimeta jooksev kataloog ümber:</value>
+  </data>
+  <data name="IncorrectObjectName" xml:space="preserve">
+    <value>Vale objekti nimi</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>Vasta</value>
+  </data>
+  <data name="ReplyAll" xml:space="preserve">
+    <value>Vasta kõigile</value>
+  </data>
+  <data name="Forward" xml:space="preserve">
+    <value>Saada</value>
+  </data>
+  <data name="SendedMail" xml:space="preserve">
+    <value>Saadetud</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Ava</value>
+  </data>
+  <data name="CleanFolder" xml:space="preserve">
+    <value>Puhasta kataloog</value>
+  </data>
+  <data name="CleanDeletedItems" xml:space="preserve">
+    <value>Kas kustutan kõik elemendid ja alamkataloogid taastamise võimaluseta?</value>
+  </data>
+  <data name="WithoutName" xml:space="preserve">
+    <value>Nimeta</value>
+  </data>
+  <data name="MailTo" xml:space="preserve">
+    <value>Kellele</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Abi</value>
+  </data>
+  <data name="MainFormDialog.SendFax.Message1" xml:space="preserve">
+    <value>Teil puuduvad õigused saatmiseks kontrorist</value>
+  </data>
+  <data name="MainFormDialog.ErrorSend" xml:space="preserve">
+    <value>Viga saatmisel</value>
+  </data>
+  <data name="SetMain" xml:space="preserve">
+    <value>Muuda põhiliseks</value>
+  </data>
+  <data name="SelectImage" xml:space="preserve">
+    <value>Vali kujutis</value>
+  </data>
+  <data name="Saved" xml:space="preserve">
+    <value>Salvestatud</value>
+  </data>
+  <data name="Blocks.Person.All" xml:space="preserve">
+    <value>&lt;kõik&gt;</value>
+  </data>
+  <data name="msgboxInvalidSupportSettings" xml:space="preserve">
+    <value>Puuduvad seaded sõnumite saatmiseks tehnilisele toele|. Tähelepanu</value>
+  </data>
+  <data name="ArchiveDocs" xml:space="preserve">
+    <value>Dokumentide arhiiv</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Ei</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Jah</value>
+  </data>
+  <data name="creating" xml:space="preserve">
+    <value>loomine</value>
+  </data>
+  <data name="editing" xml:space="preserve">
+    <value>muutmine</value>
+  </data>
+  <data name="TooManyDocs" xml:space="preserve">
+    <value>Näitan esimesed {0} dokumente. Eksistererib rohkem.</value>
+  </data>
+  <data name="Kesco.App.Win.DocView.Dialogs.Rules.DelRulesConf" xml:space="preserve">
+    <value>Kas kustutan valitud templite paigaldamise reeglid?</value>
+  </data>
+  <data name="Kesco.App.Win.DocView.Dialogs.Rules.Select" xml:space="preserve">
+    <value>Vali</value>
+  </data>
+  <data name="Kesco.App.Win.DocView.Dialogs.Rules.Exists" xml:space="preserve">
+    <value>Selline reegel on juba olemas</value>
+  </data>
+  <data name="Kesco.App.Win.DocView.Dialogs.Rules.Exists1" xml:space="preserve">
+    <value>On leitud reeglid, mis on loodava reegli erijuhtudeks.{0}
+Kas kustutan leitud reeglid ning loon uue?</value>
+  </data>
+  <data name="StampEditDialog.CheckNew.ErrorMessage1" xml:space="preserve">
+    <value>Templi salvestamiseks tuleb määrata selle nimetust</value>
+  </data>
+  <data name="StampEditDialog.CheckNew.ErrorMessage2" xml:space="preserve">
+    <value>Uue templi loomiseks on vajalik templi kujutis</value>
+  </data>
+  <data name="StampEditDialog.CheckNew.ErrorMessage3" xml:space="preserve">
+    <value>Viga templi kujutise salvestamisel</value>
+  </data>
+  <data name="needSigns" xml:space="preserve">
+    <value>On vajalik üks allkirjatest:</value>
+  </data>
+  <data name="HideForm.SearchTest.Message1" xml:space="preserve">
+    <value>Count of find documents is more then </value>
+  </data>
+  <data name="HideForm.SearchTest.Message2" xml:space="preserve">
+    <value>For doument selection you must specify the search criteria.</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>juures</value>
+  </data>
+  <data name="AllDocs" xml:space="preserve">
+    <value>Kõik dokumendid kausta - </value>
+  </data>
+  <data name="SelectedDocs" xml:space="preserve">
+    <value>, valitud - </value>
+  </data>
+  <data name="Pages" xml:space="preserve">
+    <value>Lehekülg № {0}. Kõik leheküljed pilt - {1}</value>
+  </data>
+  <data name="outlookdir" xml:space="preserve">
+    <value>Outlook temp failid</value>
+  </data>
+  <data name="ColumnsParamsEmptyAlarm.Failed" xml:space="preserve">
+    <value>Nr nähtavad veerud leiti.</value>
+  </data>
+  <data name="ColumnsParamsEmptyAlarm.Text" xml:space="preserve">
+    <value>Nr nähtavad veerud leiti. Kas te soovite nullida parameetrid default?</value>
+  </data>
+  <data name="VerifyUDCPrinter.AutoTunePrinter.Success" xml:space="preserve">
+    <value>Automaatne korrigeerimine tehakse!</value>
+  </data>
+  <data name="VerifyUDCPrinter.AutoTunePrinter.YesNo" xml:space="preserve">
+    <value>Printer Settings Arhiiv dokumendid ei vasta nõuetele, säilitades pilti dokumendi programmis arhiividokumente. Te saate automaatselt paigaldada vajalikud parameetrid. Tehakse automaatset häälestamist?</value>
+  </data>
+  <data name="VerifyUDCPrinter.ImpossibleToSave" xml:space="preserve">
+    <value>Salvestamine pildi dokument arhiividokumentide ei saa!</value>
+  </data>
+  <data name="VerifyUDCPrinter.SendDocToPrinterAgain" xml:space="preserve">
+    <value>Otsi uuesti printer arhiividokumentide dokumendi!</value>
+  </data>
+  <data name="DocGrid.Styles.DBDocsStyle.Message90" xml:space="preserve">
+    <value>Märgi sõnumid lugemata</value>
+  </data>
+  <data name="ShouldReadMessageOnEndWork" xml:space="preserve">
+    <value>Kas soovite, et tähistada dokumendi sõnumeid lugeda?</value>
+  </data>
+  <data name="SettingsMessagesAndConfirmsDialog.buttonOK_Click.Message5" xml:space="preserve">
+    <value>On vaja täpsustada sõnumi tähistamise dokumente ei loe!</value>
+  </data>
+  <data name="TmpFilesOnCloseWarning" xml:space="preserve">
+    <value>Tähelepanu! Te olete teinud muudatusi faile, mis on saadaval ainult lugemiseks.{0}Kõik Oma muudatused lähevad kaotsi.{0}Jätkata Dokumentide arhiiv?</value>
+  </data>
+  <data name="RemoveMessageOnEndWork" xml:space="preserve">
+    <value>Lõpeta töö dokumendiga?</value>
+  </data>
+  <data name="RedoMarkDocAsNotRead" xml:space="preserve">
+    <value>Märgi sõnumid lugemata Dokument {0} Saatja {1}</value>
+  </data>
+  <data name="RedoMarkDocAsRead" xml:space="preserve">
+    <value>Märgi sõnumid loetuna Dokument {0} Saatja {1}</value>
+  </data>
+  <data name="UndoMarkDocAsNotRead" xml:space="preserve">
+    <value>Märgi sõnumid loetuna Dokument </value>
+  </data>
+  <data name="UndoMarkDocAsRead" xml:space="preserve">
+    <value>Märgi sõnumid lugemata Dokument </value>
+  </data>
+  <data name="Changed" xml:space="preserve">
+    <value>changed </value>
+  </data>
+  <data name="Help1" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="ColumnsDedales" xml:space="preserve">
+    <value>Rohkem...</value>
+  </data>
+  <data name="AddGroupBoxPages" xml:space="preserve">
+    <value>Lisama</value>
+  </data>
+  <data name="rbAllPages" xml:space="preserve">
+    <value>Kõik</value>
+  </data>
+  <data name="rbSelectedPages" xml:space="preserve">
+    <value>Leheküljed:</value>
+  </data>
+  <data name="label3" xml:space="preserve">
+    <value>to:</value>
+  </data>
+  <data name="SelectStampDialog_Message1" xml:space="preserve">
+    <value>Oled sa kindel, et soovid eemaldada valitud templid?</value>
+  </data>
+  <data name="MainForm.REDORotateImageCW" xml:space="preserve">
+    <value>Rotazione immagine</value>
+  </data>
+  <data name="MainForm.UNDORotateImageCW" xml:space="preserve">
+    <value>Аnnullando la rotazione delle immagini</value>
+  </data>
+  <data name="MainForm.REDOAddImageToDoc" xml:space="preserve">
+    <value>Re-aggiungere un'immagine</value>
+  </data>
+  <data name="MainForm.UNDOAddImageToDoc" xml:space="preserve">
+    <value>Immagine aggiuntiva annulla</value>
+  </data>
+</root>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataTable="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="FaxSaved">
+		<value>Факс сохранен в архив</value>
+	</data>
+	<data name="FaxNotSaved">
+		<value>Факс не сохранен в архив</value>
+	</data>
+	<data name="Read.Title">
+		<value>Прочитан:</value>
+	</data>
+	<data name="Yes">
+		<value>да</value>
+	</data>
+	<data name="No">
+		<value>нет</value>
+	</data>
+	<data name="Description">
+		<value>Описание:</value>
+	</data>
+	<data name="Date">
+		<value>Получен:</value>
+	</data>
+	<data name="Sender">
+		<value>Отправитель:</value>
+	</data>
+	<data name="Recip">
+		<value>Получатель:</value>
+	</data>
+	<data name="SenderAddress">
+		<value>АОН:</value>
+	</data>
+	<data name="ModemID">
+		<value>Модем:</value>
+	</data>
+	<data name="baud">
+		<value>бод</value>
+	</data>
+	<data name="Speed">
+		<value>Скорость передачи:</value>
+	</data>
+	<data name="Time">
+		<value>Время передачи:</value>
+	</data>
+	<data name="Second">
+		<value>с</value>
+	</data>
+	<data name="PageRecvCount">
+		<value>Получено страниц:</value>
+	</data>
+	<data name="Editor">
+		<value>Изменил:</value>
+	</data>
+	<data name="Edited">
+		<value>Изменено:</value>
+	</data>
+	<data name="FaxInText">
+		<value>Свойства входящего факса</value>
+	</data>
+	<data name="FaxOut">
+		<value>Отправлен:</value>
+	</data>
+	<data name="RecvAddress">
+		<value>Телефон получателя:</value>
+	</data>
+	<data name="PageSentCount">
+		<value>Отправлено страниц:</value>
+	</data>
+	<data name="FaxOutText">
+		<value>Свойства исходящего факса</value>
+	</data>
+</root>

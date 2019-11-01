@@ -1,0 +1,1195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B45908D1-8590-45A0-B96B-D6E46A2AD825}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>cabinet2.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>DocView</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Kesco.App.Win.DocView</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>Kesco.App.Win.DocView.Program</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/DocView.NET/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\_Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\_Application\</OutputPath>
+    <BaseIntermediateOutputPath>..\_Obj\DocView\</BaseIntermediateOutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseWithAdvancedLogging|AnyCPU'">
+    <OutputPath>bin\ReleaseWithAdvancedLogging\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;AdvancedLogging</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>false</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\_Release\DocView.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseWithAdvancedLogging|x86'">
+    <OutputPath>bin\x86\ReleaseWithAdvancedLogging\</OutputPath>
+    <DefineConstants>TRACE;AdvancedLogging</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>false</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>..\_Application\DocView.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <Content Include="cabinet2.ico" />
+    <Content Include="changes.html" />
+    <Content Include="hotkeys.html" />
+    <Content Include="interes.html" />
+    <Compile Include="Blocks\CurPersonBlock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommandManager\Command.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandManager\CommandExecutor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CommandManager\CommandInstanceList.cs" />
+    <Compile Include="CommandManager\CommandManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommandManager\CommandsList.cs" />
+    <Compile Include="CommandManager\MenuCommandExecutor.cs" />
+    <Compile Include="CommandManager\ToolbarCommandExecutor.cs" />
+    <Compile Include="CommandManager\ToolStripCommandExecutor.cs" />
+    <Compile Include="Common\Person.cs" />
+    <Compile Include="Common\SendAnswerParams.cs" />
+    <Compile Include="Common\ViewParameters.cs" />
+    <Compile Include="Context.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DDEListener.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ChangesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ConfirmTypeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DropDownForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\MenuList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\MergeDocsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\MessageShowDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\MoveDocDialog.Designer.cs">
+      <DependentUpon>MoveDocDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\NewImageAddDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\RenameFolderDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\RightEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\RightEditDialog.Designer.cs">
+      <DependentUpon>RightEditDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\RightsListDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\RightsListDialog.designer.cs">
+      <DependentUpon>RightsListDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\RulesListDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\RulesListDialog.Designer.cs">
+      <DependentUpon>RulesListDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\RuleEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\RuleEditDialog.designer.cs">
+      <DependentUpon>RuleEditDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SelectStampDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SelectStampDialog.Designer.cs">
+      <DependentUpon>SelectStampDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SimilarDocsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\StampEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\StampEditDialog.designer.cs">
+      <DependentUpon>StampEditDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DirectoryAnalyser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Grids\DocGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grids\Grid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grids\InfoGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grids\Styles\ColParam.cs" />
+    <Compile Include="Grids\Styles\ColParams.cs" />
+    <Compile Include="Grids\Styles\FormattedStyles\DiskImagesStyle.cs">
+    </Compile>
+    <Compile Include="Grids\Styles\FormattedStyles\DBDocsStyles\DBDocsStyle.cs">
+    </Compile>
+    <Compile Include="Grids\Styles\FormattedStyles\DBDocsStyles\FoundQueryStyle.cs">
+    </Compile>
+    <Compile Include="Grids\Styles\FormattedStyles\DBDocsStyles\FoundStyle.cs">
+    </Compile>
+    <Compile Include="Grids\Styles\FormattedStyles\DBDocsStyles\FullAccessFolderStyle.cs">
+    </Compile>
+    <Compile Include="Grids\Styles\FormattedStyles\DBDocsStyles\SharedWorkFolderStyle.cs">
+    </Compile>
+    <Compile Include="Grids\Styles\FormattedStyles\DBDocsStyles\WorkFolderStyle.cs">
+    </Compile>
+    <Compile Include="Grids\Styles\FormattedStyles\DBDocumentStyle\DBDocumentStyle.cs">
+    </Compile>
+    <Compile Include="Grids\Styles\FormattedStyles\FaxesStyles\FaxesInStyle.cs">
+    </Compile>
+    <Compile Include="Grids\Styles\FormattedStyles\FaxesStyles\FaxesOutStyle.cs">
+    </Compile>
+    <Compile Include="Grids\Styles\FormattedStyles\FaxesStyles\FaxesStyle.cs">
+    </Compile>
+    <Compile Include="Grids\Styles\FormattedStyles\FormattedStyle.cs">
+    </Compile>
+    <Compile Include="Grids\Styles\FormattedStyles\InfoStyle.cs">
+    </Compile>
+    <Compile Include="Grids\Styles\OuterScanerStyle.cs">
+    </Compile>
+    <Compile Include="Grids\Styles\ScanerStyle.cs">
+    </Compile>
+    <Compile Include="Grids\Styles\Style.cs">
+    </Compile>
+    <Compile Include="Environment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dialogs\FolderDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FolderTree\AccessLevel.cs" />
+    <Compile Include="FolderTree\Dialogs\ShareWorkFolder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FolderTree\FolderNodes\FaxNodes\FaxInNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FolderTree\FolderNodes\FaxNodes\FaxNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FolderTree\FolderNodes\FaxNodes\FaxOutNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FolderTree\FolderNodes\FoundNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FolderTree\FolderNodes\Images.cs" />
+    <Compile Include="FolderTree\FolderNodes\Node.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FolderTree\FolderNodes\PathNodes\CatalogNodes\CatalogNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FolderTree\FolderNodes\PathNodes\CatalogNodes\CatalogNodeType.cs" />
+    <Compile Include="FolderTree\FolderNodes\PathNodes\CatalogNodes\CompanyNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FolderTree\FolderNodes\PathNodes\CatalogNodes\DocTypeNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FolderTree\FolderNodes\PathNodes\CatalogNodes\DocTypeSynonymGroupNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FolderTree\FolderNodes\PathNodes\CatalogNodes\DocumentNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FolderTree\FolderNodes\PathNodes\CatalogNodes\NoPersonNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FolderTree\FolderNodes\PathNodes\CatalogNodes\PersonNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FolderTree\FolderNodes\PathNodes\PathNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FolderTree\FolderNodes\PathNodes\ScanerNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FolderTree\FolderNodes\PathNodes\SystemFolderNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FolderTree\FolderNodes\WorkNodes\SharedWorkFolderNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FolderTree\FolderNodes\WorkNodes\WorkFolderUpdateParams.cs" />
+    <Compile Include="FolderTree\FolderNodes\WorkNodes\WorkFolderNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FolderTree\FolderNodes\WorkNodes\WorkNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FolderTree\FolderTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FolderTree\WFAccessItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\MainFormDialog.Designer.cs">
+      <DependentUpon>MainFormDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManagerWindow.cs" />
+    <Compile Include="GuiConsole.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HotKeys.cs" />
+    <Compile Include="ImageRead\FileInfoComparer.cs" />
+    <Compile Include="ImageRead\ImageReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ImageRead\ScanReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interface\IManagerWindowsWait.cs" />
+    <Compile Include="Items\BurnedListItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Items\IDMenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Items\ListItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Items\RuleListItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Items\VariantListItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dialogs\FolderSelectDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HideForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainFormDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\MoveDocDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SendAnswerMessageClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Forms\SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubFormDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Misc\Canceler.cs" />
+    <Compile Include="Misc\ContextMode.cs" />
+    <Compile Include="Misc\ListViewItemComparer.cs" />
+    <Compile Include="Misc\RightsListViewItemComparer.cs" />
+    <Compile Include="Program.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PropertiesDialogs\FaxFillClass.cs" />
+    <Compile Include="PropertiesDialogs\FaxItem\FaxPropertiButtonControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertiesDialogs\FaxItem\FaxPropertyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertiesDialogs\FaxItem\FaxPropertyEdiorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertiesDialogs\FaxItem\FaxPropertyEdiorControl.Designer.cs">
+      <DependentUpon>FaxPropertyEdiorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertiesDialogs\PropertesCurrentPersonDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertiesDialogs\PropertiesDBDocDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertiesDialogs\PropertiesFaxDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertiesDialogs\PropertiesFolderRuleApplyDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertiesDialogs\PropertiesFolderRuleSearchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertiesDialogs\PropertiesFolderRuleSearchDialog.Designer.cs">
+      <DependentUpon>PropertiesFolderRuleSearchDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertiesDialogs\PropertiesFolderRuleViewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertiesDialogs\PropertiesScanDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertiesDialogs\PropertiesSharedWorkFolderDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings\SettingsColumnsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\SettingsDateFiltersDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\SettingsDocumentLoadDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\SettingsFaxesDisplayDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\SettingsGroupOrderDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\SettingsLanguageDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\SettingsLinkShowDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\SettingsLinkShowDialog.Designer.cs">
+      <DependentUpon>SettingsLinkShowDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\SettingsMessagesAndConfirmsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\XmlSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\SettingsMessagesAndConfirmsDialog.Designer.cs">
+      <DependentUpon>SettingsMessagesAndConfirmsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaggedToolBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Blocks\CurPersonBlock.en.resx">
+      <DependentUpon>CurPersonBlock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Blocks\CurPersonBlock.et.resx">
+      <DependentUpon>CurPersonBlock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Blocks\CurPersonBlock.resx">
+      <DependentUpon>CurPersonBlock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Blocks\CurPersonBlock.ru.resx">
+      <DependentUpon>CurPersonBlock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DDEListener.resx">
+      <DependentUpon>DDEListener.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ChangesDialog.en.resx">
+      <DependentUpon>ChangesDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ChangesDialog.et.resx">
+      <DependentUpon>ChangesDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ChangesDialog.resx">
+      <DependentUpon>ChangesDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ChangesDialog.ru.resx">
+      <DependentUpon>ChangesDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ConfirmTypeDialog.en.resx">
+      <DependentUpon>ConfirmTypeDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ConfirmTypeDialog.et.resx">
+      <DependentUpon>ConfirmTypeDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ConfirmTypeDialog.resx">
+      <DependentUpon>ConfirmTypeDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ConfirmTypeDialog.ru.resx">
+      <DependentUpon>ConfirmTypeDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DropDownForm.resx">
+      <DependentUpon>DropDownForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\FolderSelectDialog.ru.resx">
+      <DependentUpon>FolderSelectDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\MenuList.en.resx">
+      <DependentUpon>MenuList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\MenuList.et.resx">
+      <DependentUpon>MenuList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\MenuList.resx">
+      <DependentUpon>MenuList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\MenuList.ru.resx">
+      <DependentUpon>MenuList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\MergeDocsDialog.en.resx">
+      <DependentUpon>MergeDocsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\MergeDocsDialog.et.resx">
+      <DependentUpon>MergeDocsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\MergeDocsDialog.resx">
+      <DependentUpon>MergeDocsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\MergeDocsDialog.ru.resx">
+      <DependentUpon>MergeDocsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\MessageShowDialog.resx">
+      <DependentUpon>MessageShowDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\MoveDocDialog.ru.resx">
+      <DependentUpon>MoveDocDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\NewImageAddDialog.en.resx">
+      <DependentUpon>NewImageAddDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\NewImageAddDialog.et.resx">
+      <DependentUpon>NewImageAddDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\NewImageAddDialog.resx">
+      <DependentUpon>NewImageAddDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\NewImageAddDialog.ru.resx">
+      <DependentUpon>NewImageAddDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\RenameFolderDialog.resx">
+      <DependentUpon>RenameFolderDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\RightEditDialog.en.resx">
+      <DependentUpon>RightEditDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\RightEditDialog.et.resx">
+      <DependentUpon>RightEditDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\RightEditDialog.resx">
+      <DependentUpon>RightEditDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\RightEditDialog.ru.resx">
+      <DependentUpon>RightEditDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\RightsListDialog.en.resx">
+      <DependentUpon>RightsListDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\RightsListDialog.et.resx">
+      <DependentUpon>RightsListDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\RightsListDialog.resx">
+      <DependentUpon>RightsListDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\RightsListDialog.ru.resx">
+      <DependentUpon>RightsListDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\RuleEditDialog.et.resx">
+      <DependentUpon>RuleEditDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\RuleEditDialog.ru.resx">
+      <DependentUpon>RuleEditDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\RulesListDialog.en.resx">
+      <DependentUpon>RulesListDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\RulesListDialog.et.resx">
+      <DependentUpon>RulesListDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\RulesListDialog.resx">
+      <DependentUpon>RulesListDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\RuleEditDialog.en.resx">
+      <DependentUpon>RuleEditDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\RuleEditDialog.resx">
+      <DependentUpon>RuleEditDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\RulesListDialog.ru.resx">
+      <DependentUpon>RulesListDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SelectStampDialog.en.resx">
+      <DependentUpon>SelectStampDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SelectStampDialog.et.resx">
+      <DependentUpon>SelectStampDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SelectStampDialog.resx">
+      <DependentUpon>SelectStampDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SelectStampDialog.ru.resx">
+      <DependentUpon>SelectStampDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SimilarDocsDialog.en.resx">
+      <DependentUpon>SimilarDocsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SimilarDocsDialog.et.resx">
+      <DependentUpon>SimilarDocsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SimilarDocsDialog.resx">
+      <DependentUpon>SimilarDocsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SimilarDocsDialog.ru.resx">
+      <DependentUpon>SimilarDocsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\StampEditDialog.en.resx">
+      <DependentUpon>StampEditDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\StampEditDialog.et.resx">
+      <DependentUpon>StampEditDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\StampEditDialog.resx">
+      <DependentUpon>StampEditDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\StampEditDialog.ru.resx">
+      <DependentUpon>StampEditDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderTree\Dialogs\ShareWorkFolder.en.resx">
+      <DependentUpon>ShareWorkFolder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderTree\Dialogs\ShareWorkFolder.et.resx">
+      <DependentUpon>ShareWorkFolder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderTree\Dialogs\ShareWorkFolder.resx">
+      <DependentUpon>ShareWorkFolder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderTree\Dialogs\ShareWorkFolder.ru.resx">
+      <DependentUpon>ShareWorkFolder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderTree\FolderTree.resx">
+      <DependentUpon>FolderTree.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\FolderSelectDialog.en.resx">
+      <DependentUpon>FolderSelectDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\FolderSelectDialog.et.resx">
+      <DependentUpon>FolderSelectDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\FolderSelectDialog.resx">
+      <DependentUpon>FolderSelectDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HideForm.resx">
+      <DependentUpon>HideForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainFormDialog.et.resx">
+      <DependentUpon>MainFormDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainFormDialog.resx">
+      <DependentUpon>MainFormDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\MoveDocDialog.en.resx">
+      <DependentUpon>MoveDocDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\MoveDocDialog.et.resx">
+      <DependentUpon>MoveDocDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\MoveDocDialog.resx">
+      <DependentUpon>MoveDocDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainFormDialog.ru.resx">
+      <DependentUpon>MainFormDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashForm.en.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashForm.et.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashForm.ru.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubFormDialog.en.resx">
+      <DependentUpon>SubFormDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubFormDialog.et.resx">
+      <DependentUpon>SubFormDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubFormDialog.resx">
+      <DependentUpon>SubFormDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubFormDialog.ru.resx">
+      <DependentUpon>SubFormDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\FaxFillClass.en.resx">
+      <DependentUpon>FaxFillClass.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\FaxFillClass.et.resx">
+      <DependentUpon>FaxFillClass.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\FaxFillClass.resx">
+      <DependentUpon>FaxFillClass.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\FaxFillClass.ru.resx">
+      <DependentUpon>FaxFillClass.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\FaxItem\FaxPropertiButtonControl.en.resx">
+      <DependentUpon>FaxPropertiButtonControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\FaxItem\FaxPropertiButtonControl.et.resx">
+      <DependentUpon>FaxPropertiButtonControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\FaxItem\FaxPropertiButtonControl.resx">
+      <DependentUpon>FaxPropertiButtonControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\FaxItem\FaxPropertiButtonControl.ru.resx">
+      <DependentUpon>FaxPropertiButtonControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\FaxItem\FaxPropertyControl.resx">
+      <DependentUpon>FaxPropertyControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertesCurrentPersonDialog.en.resx">
+      <DependentUpon>PropertesCurrentPersonDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertesCurrentPersonDialog.et.resx">
+      <DependentUpon>PropertesCurrentPersonDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertesCurrentPersonDialog.resx">
+      <DependentUpon>PropertesCurrentPersonDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertesCurrentPersonDialog.ru.resx">
+      <DependentUpon>PropertesCurrentPersonDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesDBDocDialog.en.resx">
+      <DependentUpon>PropertiesDBDocDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesDBDocDialog.et.resx">
+      <DependentUpon>PropertiesDBDocDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesDBDocDialog.resx">
+      <DependentUpon>PropertiesDBDocDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesDBDocDialog.ru.resx">
+      <DependentUpon>PropertiesDBDocDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesFaxDialog.en.resx">
+      <DependentUpon>PropertiesFaxDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesFaxDialog.et.resx">
+      <DependentUpon>PropertiesFaxDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesFaxDialog.resx">
+      <DependentUpon>PropertiesFaxDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesFaxDialog.ru.resx">
+      <DependentUpon>PropertiesFaxDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesFolderRuleApplyDialog.en.resx">
+      <DependentUpon>PropertiesFolderRuleApplyDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesFolderRuleApplyDialog.et.resx">
+      <DependentUpon>PropertiesFolderRuleApplyDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesFolderRuleApplyDialog.resx">
+      <DependentUpon>PropertiesFolderRuleApplyDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesFolderRuleApplyDialog.ru.resx">
+      <DependentUpon>PropertiesFolderRuleApplyDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesFolderRuleSearchDialog.en.resx">
+      <DependentUpon>PropertiesFolderRuleSearchDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesFolderRuleSearchDialog.et.resx">
+      <DependentUpon>PropertiesFolderRuleSearchDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesFolderRuleSearchDialog.resx">
+      <DependentUpon>PropertiesFolderRuleSearchDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesFolderRuleSearchDialog.ru.resx">
+      <DependentUpon>PropertiesFolderRuleSearchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesFolderRuleViewDialog.en.resx">
+      <DependentUpon>PropertiesFolderRuleViewDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesFolderRuleViewDialog.et.resx">
+      <DependentUpon>PropertiesFolderRuleViewDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesFolderRuleViewDialog.resx">
+      <DependentUpon>PropertiesFolderRuleViewDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesFolderRuleViewDialog.ru.resx">
+      <DependentUpon>PropertiesFolderRuleViewDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesScanDialog.en.resx">
+      <DependentUpon>PropertiesScanDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesScanDialog.et.resx">
+      <DependentUpon>PropertiesScanDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesScanDialog.resx">
+      <DependentUpon>PropertiesScanDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesScanDialog.ru.resx">
+      <DependentUpon>PropertiesScanDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesSharedWorkFolderDialog.en.resx">
+      <DependentUpon>PropertiesSharedWorkFolderDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesSharedWorkFolderDialog.resx">
+      <DependentUpon>PropertiesSharedWorkFolderDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertiesDialogs\PropertiesSharedWorkFolderDialog.ru.resx">
+      <DependentUpon>PropertiesSharedWorkFolderDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsColumnsDialog.en.resx">
+      <DependentUpon>SettingsColumnsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsColumnsDialog.et.resx">
+      <DependentUpon>SettingsColumnsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsColumnsDialog.resx">
+      <DependentUpon>SettingsColumnsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsColumnsDialog.ru.resx">
+      <DependentUpon>SettingsColumnsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsDateFiltersDialog.en.resx">
+      <DependentUpon>SettingsDateFiltersDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsDateFiltersDialog.et.resx">
+      <DependentUpon>SettingsDateFiltersDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsDateFiltersDialog.resx">
+      <DependentUpon>SettingsDateFiltersDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsDateFiltersDialog.ru.resx">
+      <DependentUpon>SettingsDateFiltersDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsDocumentLoadDialog.en.resx">
+      <DependentUpon>SettingsDocumentLoadDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsDocumentLoadDialog.et.resx">
+      <DependentUpon>SettingsDocumentLoadDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsDocumentLoadDialog.resx">
+      <DependentUpon>SettingsDocumentLoadDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsDocumentLoadDialog.ru.resx">
+      <DependentUpon>SettingsDocumentLoadDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsFaxesDisplayDialog.en.resx">
+      <DependentUpon>SettingsFaxesDisplayDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsFaxesDisplayDialog.et.resx">
+      <DependentUpon>SettingsFaxesDisplayDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsFaxesDisplayDialog.resx">
+      <DependentUpon>SettingsFaxesDisplayDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsFaxesDisplayDialog.ru.resx">
+      <DependentUpon>SettingsFaxesDisplayDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsGroupOrderDialog.en.resx">
+      <DependentUpon>SettingsGroupOrderDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsGroupOrderDialog.et.resx">
+      <DependentUpon>SettingsGroupOrderDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsGroupOrderDialog.resx">
+      <DependentUpon>SettingsGroupOrderDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsGroupOrderDialog.ru.resx">
+      <DependentUpon>SettingsGroupOrderDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsLanguageDialog.en.resx">
+      <DependentUpon>SettingsLanguageDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsLanguageDialog.et.resx">
+      <DependentUpon>SettingsLanguageDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsLanguageDialog.resx">
+      <DependentUpon>SettingsLanguageDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsLanguageDialog.ru.resx">
+      <DependentUpon>SettingsLanguageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsLinkShowDialog.en.resx">
+      <DependentUpon>SettingsLinkShowDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsLinkShowDialog.resx">
+      <DependentUpon>SettingsLinkShowDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsLinkShowDialog.ru.resx">
+      <DependentUpon>SettingsLinkShowDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsMessagesAndConfirmsDialog.en.resx">
+      <DependentUpon>SettingsMessagesAndConfirmsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsMessagesAndConfirmsDialog.et.resx">
+      <DependentUpon>SettingsMessagesAndConfirmsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsMessagesAndConfirmsDialog.resx">
+      <DependentUpon>SettingsMessagesAndConfirmsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsMessagesAndConfirmsDialog.ru.resx">
+      <DependentUpon>SettingsMessagesAndConfirmsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringResources.en.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StringResources.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringResources.et.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>StringResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\XmlSearchForm.resx">
+      <DependentUpon>XmlSearchForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringResources.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Data\Kesco.Lib.Win.Data.csproj">
+      <Project>{88C502A2-4FCD-4D27-9D6D-74ED1A5F3C8F}</Project>
+      <Name>Kesco.Lib.Win.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ImageControl\Kesco.Lib.Win.ImageControl.csproj">
+      <Project>{D6AEAF57-8C50-4E65-AF04-2A04B5BBAC2B}</Project>
+      <Name>Kesco.Lib.Win.ImageControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Log\Kesco.Lib.Log.csproj">
+      <Project>{FC924B22-160A-4F7F-98EB-63E420DE694E}</Project>
+      <Name>Kesco.Lib.Log</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Error\Kesco.Lib.Win.Error.csproj">
+      <Project>{A6E0282A-D134-40DD-8EFA-A3F6332B4EDD}</Project>
+      <Name>Kesco.Lib.Win.Error</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Options\Kesco.Lib.Win.Options.csproj">
+      <Project>{CBBF95B6-E6B1-4315-A94C-63C6743AA7C8}</Project>
+      <Name>Kesco.Lib.Win.Options</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Receive\Kesco.Lib.Win.Receive.csproj">
+      <Project>{6990228A-4238-4B89-9D68-E28630703FF2}</Project>
+      <Name>Kesco.Lib.Win.Receive</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SingleInstance\Kesco.Lib.Win.SingleInstance.csproj">
+      <Project>{C43B3E47-1C7F-4BD5-84FC-3DA4E06F57EA}</Project>
+      <Name>Kesco.Lib.Win.SingleInstance</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tiff\Kesco.Lib.Win.Tiff.csproj">
+      <Project>{61CC01A3-2071-4C45-83B9-919662DCDBE8}</Project>
+      <Name>Kesco.Lib.Win.Tiff</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Win\Kesco.Lib.Win.csproj">
+      <Project>{9B40FE2D-9949-4151-BE04-7A17B522FF04}</Project>
+      <Name>Kesco.Lib.Win</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Document\Kesco.Lib.Win.Document.csproj">
+      <Project>{07FA207B-DD6A-4376-821D-C76EEB4E9988}</Project>
+      <Name>Kesco.Lib.Win.Document</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>if  "$(ConfigurationName)" == "Release"  $(SolutionDir)_Application.cmd $(SolutionDir)</PostBuildEvent>
+  </PropertyGroup>
+</Project>
