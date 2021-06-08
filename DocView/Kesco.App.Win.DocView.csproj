@@ -1175,43 +1175,43 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Data\Kesco.Lib.Win.Data.csproj">
+    <ProjectReference Include="..\Kesco.Lib.Win.Data\Kesco.Lib.Win.Data.csproj">
       <Project>{88C502A2-4FCD-4D27-9D6D-74ED1A5F3C8F}</Project>
       <Name>Kesco.Lib.Win.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ImageControl\Kesco.Lib.Win.ImageControl.csproj">
+    <ProjectReference Include="..\Kesco.Lib.Win.ImageControl\Kesco.Lib.Win.ImageControl.csproj">
       <Project>{D6AEAF57-8C50-4E65-AF04-2A04B5BBAC2B}</Project>
       <Name>Kesco.Lib.Win.ImageControl</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Log\Kesco.Lib.Log.csproj">
+    <ProjectReference Include="..\Kesco.Lib.Log\Kesco.Lib.Log.csproj">
       <Project>{FC924B22-160A-4F7F-98EB-63E420DE694E}</Project>
       <Name>Kesco.Lib.Log</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Error\Kesco.Lib.Win.Error.csproj">
+    <ProjectReference Include="..\Kesco.Lib.Win.Error\Kesco.Lib.Win.Error.csproj">
       <Project>{A6E0282A-D134-40DD-8EFA-A3F6332B4EDD}</Project>
       <Name>Kesco.Lib.Win.Error</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Options\Kesco.Lib.Win.Options.csproj">
+    <ProjectReference Include="..\Kesco.Lib.Win.Options\Kesco.Lib.Win.Options.csproj">
       <Project>{CBBF95B6-E6B1-4315-A94C-63C6743AA7C8}</Project>
       <Name>Kesco.Lib.Win.Options</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Receive\Kesco.Lib.Win.Receive.csproj">
+    <ProjectReference Include="..\Kesco.Lib.Win.Receive\Kesco.Lib.Win.Receive.csproj">
       <Project>{6990228A-4238-4B89-9D68-E28630703FF2}</Project>
       <Name>Kesco.Lib.Win.Receive</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SingleInstance\Kesco.Lib.Win.SingleInstance.csproj">
+    <ProjectReference Include="..\Kesco.Lib.Win.SingleInstance\Kesco.Lib.Win.SingleInstance.csproj">
       <Project>{C43B3E47-1C7F-4BD5-84FC-3DA4E06F57EA}</Project>
       <Name>Kesco.Lib.Win.SingleInstance</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Tiff\Kesco.Lib.Win.Tiff.csproj">
+    <ProjectReference Include="..\Kesco.Lib.Win.Tiff\Kesco.Lib.Win.Tiff.csproj">
       <Project>{61CC01A3-2071-4C45-83B9-919662DCDBE8}</Project>
       <Name>Kesco.Lib.Win.Tiff</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Win\Kesco.Lib.Win.csproj">
+    <ProjectReference Include="..\Kesco.Lib.Win.Win\Kesco.Lib.Win.csproj">
       <Project>{9B40FE2D-9949-4151-BE04-7A17B522FF04}</Project>
       <Name>Kesco.Lib.Win</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Document\Kesco.Lib.Win.Document.csproj">
+    <ProjectReference Include="..\Kesco.Lib.Win.Document\Kesco.Lib.Win.Document.csproj">
       <Project>{07FA207B-DD6A-4376-821D-C76EEB4E9988}</Project>
       <Name>Kesco.Lib.Win.Document</Name>
     </ProjectReference>
