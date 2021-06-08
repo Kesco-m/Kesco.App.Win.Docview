@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -117,22 +117,42 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnSelect.Text" xml:space="preserve">
-    <value>Выбрать</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="checkBoxSeachReload.Size" type="System.Drawing.Size, System.Drawing">
+    <value>267, 17</value>
   </data>
-  <data name="btnEdit.Text" xml:space="preserve">
-    <value>Редактировать</value>
+  <data name="checkBoxSeachReload.Text" xml:space="preserve">
+    <value>Обновлять выбранную папку запросов каждые</value>
   </data>
-  <data name="btnDelete.Text" xml:space="preserve">
-    <value>Удалить</value>
+  <data name="labelM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
   </data>
-  <data name="btnCancel.Text" xml:space="preserve">
+  <data name="labelM.Text" xml:space="preserve">
+    <value>минут</value>
+  </data>
+  <data name="buttonCancel.Text" xml:space="preserve">
     <value>Отмена</value>
   </data>
-  <data name="buttonFromFile.Text" xml:space="preserve">
-    <value>Создать из файла</value>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAAAGABoAwAAFgAAACgAAAAQAAAAIAAAAAEAGAAAAAAAAAMAAAAAAAAAAAAAAAAAAAAA
+        AAAAAABBfpQpTl0rT18pTFwdNkESICcKEhUTIio7bYWRt8sAAAAAAAAAAAAAAAAAAAAAAABAg5i02eW+
+        3Omz1eSnzt+SwtmNvtZSl7gvVWk4Zn2SuMsAAAAAAAAAAAAAAAAAAAA/h5nC4uvJ5O3D4eq42uWq0eGS
+        w9l9uNI5aoF/mKVAdo+SuMsAAAAAAAAAAAAAAAA/i53J5u7Q6e84kZ44kZ44kZ44kZ44kZ5Ef5h1ss6E
+        o7BFgJuRuMkAAAAAAAAAAAA/k6LS6/HT6/HO6e/J5u633Oik0OGEwNZLka2TxNqax9uJrb5JiqWpx9QA
+        AAAAAAA/majU7vPP6/E4kZ44kZ44kZ44kZ44kZ5PnrpKkatBf5c4a38tVmZGiaIAAAAAAAA/nqvX8PTR
+        7vLK6u/D5u3O6u/A4+yw2+aazt6azt6OxtqOxdpMlbAtWWkAAAAAAABApbLW8fTU7/M5kZ46j507jp07
+        jZw+i5s/ips/iJtAh5ubzt6RyNomTFkAAAAAAAA/qrfZ8fXR7/PQ7vPL7PHJ6vDE6O7A5u2/5Oy03+i1
+        3uiq2OSZz94iSVIAAAAAAABAr7zX8fXX8fU2k543kp43kp44kZ45kJ06j507jp09jJyr2uSm2OMdQEYA
+        AAAAAABAsb/W8fTW8fTW8fTK7fLJ7fHI6/DI6/C85+265Oyx4Omn3OWp3OUdQkkAAAAAAABBtsTV8fTV
+        8fQ1k581k581k582k542kp43kp44kZ44kZ6w4emn3eYhTlUAAAAAAABCusjV8fTP7/PU8fTR8PPO7/PI
+        7PHB6u+05Oy15eyt4+qr4emi3eUhUloAAAAAAABEvMpEf5jS8PNEf5jP7/NEf5jB6vBEf5iz5OxEf5iv
+        5OtEf5ij3+clX2cAAAAAAABEf5hEv81Ef5hBuMdEf5g+sb9Ef5g6prNEf5g3m6hEf5g1k59Ef5glYmoA
+        AAAAAABEf5hEv81Ef5hBuMdEf5g+sb9Ef5g6prNEf5g3m6hEf5g1k59Ef5gzi5YAAACAHwAAgA8AAIAH
+        AACAAwAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAA
+</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Штампы</value>
+    <value>Настройки папок</value>
   </data>
 </root>

@@ -355,7 +355,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupMessage.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>3</value>
   </data>
   <data name="buttonOK.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom</value>
@@ -367,7 +367,7 @@
     <value>NoControl</value>
   </data>
   <data name="buttonOK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 344</value>
+    <value>132, 319</value>
   </data>
   <data name="buttonOK.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -388,7 +388,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buttonOK.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>5</value>
   </data>
   <data name="buttonCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom</value>
@@ -400,7 +400,7 @@
     <value>NoControl</value>
   </data>
   <data name="buttonCancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 344</value>
+    <value>220, 319</value>
   </data>
   <data name="buttonCancel.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -421,7 +421,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;buttonCancel.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>6</value>
   </data>
   <data name="groupConfirm.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -481,7 +481,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupConfirm.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>4</value>
   </data>
   <data name="checkBoxScan.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left, Right</value>
@@ -499,7 +499,7 @@
     <value>NoControl</value>
   </data>
   <data name="checkBoxScan.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 325</value>
+    <value>8, 300</value>
   </data>
   <data name="checkBoxScan.Size" type="System.Drawing.Size, System.Drawing">
     <value>239, 18</value>
@@ -520,7 +520,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;checkBoxScan.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>2</value>
   </data>
   <data name="checkBoxBar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -535,7 +535,7 @@
     <value>NoControl</value>
   </data>
   <data name="checkBoxBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 303</value>
+    <value>8, 278</value>
   </data>
   <data name="checkBoxBar.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 18</value>
@@ -556,7 +556,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;checkBoxBar.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>1</value>
   </data>
   <data name="rbReadOnEndAlways.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -682,90 +682,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupReadOnEndWork.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="checkBoxUpdateSearchFolder.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="checkBoxUpdateSearchFolder.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBoxUpdateSearchFolder.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 281</value>
-  </data>
-  <data name="checkBoxUpdateSearchFolder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 17</value>
-  </data>
-  <data name="checkBoxUpdateSearchFolder.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="checkBoxUpdateSearchFolder.Text" xml:space="preserve">
-    <value>Refresh query folder every</value>
-  </data>
-  <data name="&gt;&gt;checkBoxUpdateSearchFolder.Name" xml:space="preserve">
-    <value>checkBoxUpdateSearchFolder</value>
-  </data>
-  <data name="&gt;&gt;checkBoxUpdateSearchFolder.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBoxUpdateSearchFolder.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;checkBoxUpdateSearchFolder.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="textBoxUpdateFolderTime.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="textBoxUpdateFolderTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>212, 279</value>
-  </data>
-  <data name="textBoxUpdateFolderTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 20</value>
-  </data>
-  <data name="textBoxUpdateFolderTime.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;textBoxUpdateFolderTime.Name" xml:space="preserve">
-    <value>textBoxUpdateFolderTime</value>
-  </data>
-  <data name="&gt;&gt;textBoxUpdateFolderTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxUpdateFolderTime.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBoxUpdateFolderTime.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>245, 282</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 13</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>minute</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -775,7 +691,7 @@
     <value>5, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>426, 375</value>
+    <value>426, 350</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -787,6 +703,6 @@
     <value>SettingsMessagesAndConfirmsDialog</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Kesco.Lib.Win.FreeDialog, Win, Version=1.0.6996.30234, Culture=neutral, PublicKeyToken=null</value>
+    <value>Kesco.Lib.Win.FreeDialog, Win, Version=1.0.7368.35636, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

@@ -312,6 +312,9 @@
 	<data name="mIColumns.Text" xml:space="preserve">
     <value>Veerud...</value>
   </data>
+  <data name="menuItemFolders.Text" xml:space="preserve">
+    <value>Folders...</value>
+  </data>
 	<data name="menuColor1.Text" xml:space="preserve">
     <value>Nagu on</value>
   </data>

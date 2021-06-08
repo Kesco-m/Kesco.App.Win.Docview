@@ -28,7 +28,7 @@ using System.Resources;
 #if(DEBUG)
 [assembly: AssemblyVersion("0.6.1.*")]
 #else
-[assembly: AssemblyVersion("0.6.1.9169")]
+[assembly: AssemblyVersion("0.06.02.10520")]
 #endif
 [assembly: Kesco.Lib.Log.AssemblyIsKesco()]
 

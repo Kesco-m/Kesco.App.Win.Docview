@@ -136,6 +136,8 @@ namespace Kesco.App.Win.DocView
 								testCulture = null;
 							}
 							Environment.CurCultureInfo = testCulture ?? CultureInfo.CurrentCulture;
+							if(splash != null)
+								splash.ReloadUI();
 						}
 					}
 #if(DEBUG)

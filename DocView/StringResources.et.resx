@@ -897,6 +897,9 @@
   <data name="MainFormDialog.SendFax.Message1" xml:space="preserve">
     <value>Teil puuduvad õigused saatmiseks kontrorist</value>
   </data>
+  <data name="MainFormDialog.SendFax.Message_2" xml:space="preserve">
+    <value>Kontorist dokumendi saatmiseks peate selle kõigepealt dokumentide arhiivi salvestama</value>
+  </data>
   <data name="MainFormDialog.ErrorSend" xml:space="preserve">
     <value>Viga saatmisel</value>
   </data>
@@ -1059,5 +1062,8 @@ Kas kustutan leitud reeglid ning loon uue?</value>
   </data>
   <data name="MainForm.UNDOAddImageToDoc" xml:space="preserve">
     <value>Immagine aggiuntiva annulla</value>
+  </data>
+  <data name="MainFormDialog.SendFax.Message_3" xml:space="preserve">
+    <value>Mõned dokumendid ei sisalda pilte.</value>
   </data>
 </root>

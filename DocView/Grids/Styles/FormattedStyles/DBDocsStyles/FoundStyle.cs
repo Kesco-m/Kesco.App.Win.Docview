@@ -29,12 +29,12 @@ namespace Kesco.App.Win.DocView.Grids.Styles.FormattedStyles.DBDocsStyles
             return true;
         }
 
-		internal static bool HasInstance()
+		internal static new bool HasInstance()
 		{
 			return instance != null;
 		}
 
-		internal static void DropInstance()
+		internal static new void DropInstance()
 		{
 			if(instance != null)
 				instance = null;

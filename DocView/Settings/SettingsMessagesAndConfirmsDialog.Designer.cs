@@ -44,9 +44,6 @@ namespace Kesco.App.Win.DocView.Settings
 			this.rbReadOnEndNever = new System.Windows.Forms.RadioButton();
 			this.rbReadOnEndAskMe = new System.Windows.Forms.RadioButton();
 			this.groupReadOnEndWork = new System.Windows.Forms.GroupBox();
-			this.checkBoxUpdateSearchFolder = new System.Windows.Forms.CheckBox();
-			this.textBoxUpdateFolderTime = new System.Windows.Forms.TextBox();
-			this.label1 = new System.Windows.Forms.Label();
 			this.groupMessage.SuspendLayout();
 			this.groupConfirm.SuspendLayout();
 			this.groupReadOnEndWork.SuspendLayout();
@@ -93,8 +90,8 @@ namespace Kesco.App.Win.DocView.Settings
 			// 
 			// label2
 			// 
-			resources.ApplyResources(this.label2, "label2");
 			this.label2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+			resources.ApplyResources(this.label2, "label2");
 			this.label2.Name = "label2";
 			// 
 			// checkNewMessageNotification
@@ -168,33 +165,11 @@ namespace Kesco.App.Win.DocView.Settings
 			this.groupReadOnEndWork.Name = "groupReadOnEndWork";
 			this.groupReadOnEndWork.TabStop = false;
 			// 
-			// checkBoxUpdateSearchFolder
-			// 
-			resources.ApplyResources(this.checkBoxUpdateSearchFolder, "checkBoxUpdateSearchFolder");
-			this.checkBoxUpdateSearchFolder.Checked = true;
-			this.checkBoxUpdateSearchFolder.CheckState = System.Windows.Forms.CheckState.Indeterminate;
-			this.checkBoxUpdateSearchFolder.Name = "checkBoxUpdateSearchFolder";
-			this.checkBoxUpdateSearchFolder.UseVisualStyleBackColor = true;
-			this.checkBoxUpdateSearchFolder.CheckedChanged += new System.EventHandler(this.checkBoxUpdateSearchFolder_CheckedChanged);
-			// 
-			// textBoxUpdateFolderTime
-			// 
-			resources.ApplyResources(this.textBoxUpdateFolderTime, "textBoxUpdateFolderTime");
-			this.textBoxUpdateFolderTime.Name = "textBoxUpdateFolderTime";
-			// 
-			// label1
-			// 
-			resources.ApplyResources(this.label1, "label1");
-			this.label1.Name = "label1";
-			// 
 			// SettingsMessagesAndConfirmsDialog
 			// 
 			this.AcceptButton = this.buttonOK;
 			resources.ApplyResources(this, "$this");
 			this.CancelButton = this.buttonCancel;
-			this.Controls.Add(this.label1);
-			this.Controls.Add(this.textBoxUpdateFolderTime);
-			this.Controls.Add(this.checkBoxUpdateSearchFolder);
 			this.Controls.Add(this.groupReadOnEndWork);
 			this.Controls.Add(this.checkBoxBar);
 			this.Controls.Add(this.checkBoxScan);
@@ -237,9 +212,6 @@ namespace Kesco.App.Win.DocView.Settings
 		private RadioButton rbReadOnEndAskMe;
 		private GroupBox groupReadOnEndWork;
 		private Container components;
-		private CheckBox checkBoxUpdateSearchFolder;
-		private TextBox textBoxUpdateFolderTime;
-		private Label label1;
 
 	}
 }

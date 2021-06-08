@@ -159,7 +159,7 @@ namespace Kesco.App.Win.DocView.Dialogs
             byte[] imagebyte = GetImageBytes(StampImage);
             if (imagebyte == null || imagebyte.Length < 10)
             {
-                ErrorShower.OnShowError(null,
+                ErrorShower.OnShowError(this,
                                         Environment.StringResources.GetString(
                                             "StampEditDialog.CheckNew.ErrorMessage2"),
                                         Environment.StringResources.GetString("Warning"));

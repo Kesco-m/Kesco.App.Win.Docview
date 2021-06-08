@@ -42,10 +42,14 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <SccProjectName>Svn</SccProjectName>
-    <SccLocalPath>Svn</SccLocalPath>
-    <SccAuxPath>Svn</SccAuxPath>
-    <SccProvider>SubversionScc</SccProvider>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -166,6 +170,9 @@
     <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
     <DebugType>pdbonly</DebugType>
     <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System">
@@ -507,6 +514,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings\SettingsAdditionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\SettingsAdditionDialog.Designer.cs">
+      <DependentUpon>SettingsAdditionDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Settings\SettingsColumnsDialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -539,6 +552,16 @@
     </Compile>
     <Compile Include="Settings\SettingsMessagesAndConfirmsDialog.Designer.cs">
       <DependentUpon>SettingsMessagesAndConfirmsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StringResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StringResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StringResources.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StringResources.en.resx</DependentUpon>
     </Compile>
     <Compile Include="TaggedToolBar.cs">
       <SubType>Component</SubType>
@@ -682,6 +705,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\RightsListDialog.ru.resx">
       <DependentUpon>RightsListDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\RuleEditDialog.et.resx">
       <DependentUpon>RuleEditDialog.cs</DependentUpon>
@@ -689,6 +713,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\RuleEditDialog.ru.resx">
       <DependentUpon>RuleEditDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\RulesListDialog.en.resx">
       <DependentUpon>RulesListDialog.cs</DependentUpon>
@@ -712,6 +737,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\RulesListDialog.ru.resx">
       <DependentUpon>RulesListDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\SelectStampDialog.en.resx">
       <DependentUpon>SelectStampDialog.cs</DependentUpon>
@@ -727,6 +753,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\SelectStampDialog.ru.resx">
       <DependentUpon>SelectStampDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\SimilarDocsDialog.en.resx">
       <DependentUpon>SimilarDocsDialog.cs</DependentUpon>
@@ -1003,6 +1030,12 @@
     <EmbeddedResource Include="PropertiesDialogs\PropertiesSharedWorkFolderDialog.ru.resx">
       <DependentUpon>PropertiesSharedWorkFolderDialog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsAdditionDialog.resx">
+      <DependentUpon>SettingsAdditionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\SettingsAdditionDialog.ru.resx">
+      <DependentUpon>SettingsAdditionDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Settings\SettingsColumnsDialog.en.resx">
       <DependentUpon>SettingsColumnsDialog.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -1142,9 +1175,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Data\Kesco.Lib.Win.Data.csproj">
       <Project>{88C502A2-4FCD-4D27-9D6D-74ED1A5F3C8F}</Project>
       <Name>Kesco.Lib.Win.Data</Name>
@@ -1185,6 +1215,9 @@
       <Project>{07FA207B-DD6A-4376-821D-C76EEB4E9988}</Project>
       <Name>Kesco.Lib.Win.Document</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

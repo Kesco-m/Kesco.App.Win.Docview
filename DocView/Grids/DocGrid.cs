@@ -141,9 +141,9 @@ namespace Kesco.App.Win.DocView.Grids
 		//    if(loader.CancellationPending)
 		//        return;
 
-//#if AdvancedLogging
+		//#if AdvancedLogging
 		//	using(Lib.Log.Logger.DurationMetter("DocGrid loader_SharedWorkFolderDocs id= " + id))
-//#endif
+		//#endif
 		//    {
 		//        DataTable dt = Environment.DocData.GetWorkFolderDocs(Environment.CurCultureInfo.Name, Environment.UserSettings.PersonID, emp.ID, id, out loader.Cmd);
 		//        if(!loader.CancellationPending)
@@ -161,9 +161,9 @@ namespace Kesco.App.Win.DocView.Grids
 		//    if(loader.CancellationPending)
 		//        return;
 
-//#if AdvancedLogging
-//			using (Lib.Log.Logger.DurationMetter("DocGrid loader_FullAccessFolderDocs id= " + id))
-//#endif
+		//#if AdvancedLogging
+		//			using (Lib.Log.Logger.DurationMetter("DocGrid loader_FullAccessFolderDocs id= " + id))
+		//#endif
 		//    {
 		//        DataTable dt = Environment.DocData.GetWorkFolderDocs(Environment.CurCultureInfo.Name, Environment.UserSettings.PersonID, emp.ID, id, out loader.Cmd);
 		//        if(!loader.CancellationPending)
@@ -174,8 +174,8 @@ namespace Kesco.App.Win.DocView.Grids
 		private DataTable loader_DiskImages(object obj)
 		{
 
-			var path = (string)((object[ ])obj)[0];
-			CancellationToken ct = (CancellationToken)((object[ ])obj)[1];
+			var path = (string)((object[])obj)[0];
+			CancellationToken ct = (CancellationToken)((object[])obj)[1];
 			var ir = new ImageRead.ImageReader(path);
 
 			if(ct.IsCancellationRequested)
@@ -197,7 +197,6 @@ namespace Kesco.App.Win.DocView.Grids
 					return null;
 				}
 			}
-			return null;
 		}
 
 		private DataTable loader_Scans(object obj)

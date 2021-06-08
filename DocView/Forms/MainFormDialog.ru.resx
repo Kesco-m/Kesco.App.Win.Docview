@@ -312,6 +312,9 @@
 	<data name="mIColumns.Text" xml:space="preserve">
     <value>Колонки...</value>
   </data>
+  <data name="menuItemFolders.Text" xml:space="preserve">
+    <value>Папки...</value>
+  </data>
 	<data name="menuColor1.Text" xml:space="preserve">
     <value>как есть</value>
   </data>

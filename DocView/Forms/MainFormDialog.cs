@@ -33,16 +33,16 @@ using Kesco.Lib.Win.Receive;
 
 namespace Kesco.App.Win.DocView.Forms
 {
-    /// <summary>
-    /// Основная форма приложения
-    /// </summary>
+	/// <summary>
+	/// Основная форма приложения
+	/// </summary>
 	public partial class MainFormDialog : Kesco.Lib.Win.FreeDialog
     {
 
-        public MainFormDialog()
-        {
+		public MainFormDialog()
+		{
 			Thread.CurrentThread.CurrentUICulture = Environment.CurCultureInfo;
-            InitializeComponent();
+			InitializeComponent();
 			this.tableLayoutPanel1.Controls.Remove(this.toolBar);
 			this.tableLayoutPanel1.Visible = false;
 			this.Controls.Remove(this.tableLayoutPanel1);
@@ -50,121 +50,120 @@ namespace Kesco.App.Win.DocView.Forms
 			opinionControl.Enabled = false;
 			opinionControl.Visible = false;
 			InitializeTranlation();
-            try
-            {
-                toolBar.ImageScalingSize = new Size((int)(toolBar.ImageScalingSize.Width * Lib.Win.Document.Environment.Dpi / 96),
-                             (int)(toolBar.ImageScalingSize.Height * Lib.Win.Document.Environment.Dpi / 96));
+			try
+			{
+				toolBar.ImageScalingSize = new Size((int)(toolBar.ImageScalingSize.Width * Lib.Win.Document.Environment.Dpi / 96), (int)(toolBar.ImageScalingSize.Height * Lib.Win.Document.Environment.Dpi / 96));
 
-                docControl.CanSave = true;
+				docControl.CanSave = true;
 
-                KeyPreview = true;
+				KeyPreview = true;
 
-                keyLocker = new SynchronizedCollection<Keys>();
+				keyLocker = new SynchronizedCollection<Keys>();
 
-                showDocsAndMessages = Environment.General.LoadIntOption("ShowDocAndMessage", 0);
+				showDocsAndMessages = Environment.General.LoadIntOption("ShowDocAndMessage", 0);
 
-                // setting person word where needed
-                menuGotoPerson.Text += Environment.PersonWord.GetForm(Cases.R, false, false);
+				// setting person word where needed
+				menuGotoPerson.Text += Environment.PersonWord.GetForm(Cases.R, false, false);
 
-                // Init Command Manager
-                Slave.DoWork(InitializeCommandManager, null);
+				// Init Command Manager
+				Slave.DoWork(InitializeCommandManager, null);
 
-                // setting status bar refresh
-                statusBarPanelDoc.Text = string.Empty;
+				// setting status bar refresh
+				statusBarPanelDoc.Text = string.Empty;
 
-                Kesco.Lib.Win.Data.Settings.DS_document = Environment.ConnectionStringDocument;
-                Kesco.Lib.Win.Data.Settings.DS_person = Environment.ConnectionStringDocument;
+				Kesco.Lib.Win.Data.Settings.DS_document = Environment.ConnectionStringDocument;
+				Kesco.Lib.Win.Data.Settings.DS_person = Environment.ConnectionStringDocument;
 
-                if (!Environment.IsConnected)
-                    ErrorMessage(
-                        Environment.StringResources.GetString("MainForm.MainFormDialog.MainFormDialog.Error1"),
-                        Environment.StringResources.GetString("Error"));
-                if (!Environment.IsConnectedBuh)
-                    ErrorMessage(
-                        Environment.StringResources.GetString("MainForm.MainFormDialog.MainFormDialog.Error2"),
-                        Environment.StringResources.GetString("Error"));
+				if(!Environment.IsConnected)
+					ErrorMessage(
+						Environment.StringResources.GetString("MainForm.MainFormDialog.MainFormDialog.Error1"),
+						Environment.StringResources.GetString("Error"));
+				if(!Environment.IsConnectedBuh)
+					ErrorMessage(
+						Environment.StringResources.GetString("MainForm.MainFormDialog.MainFormDialog.Error2"),
+						Environment.StringResources.GetString("Error"));
 
 				Lib.Win.Document.Environment.NewWindow += DocControl_NewWindow;
 				Lib.Win.Document.Environment.NeedRefresh += new EventHandler(docControl_NeedRefresh);
 
-                // filename, path, page, scrollpositionx, scrollpositiony
-                Environment.General.LoadStringOption("FileName", string.Empty);
-                Environment.General.LoadStringOption("Path", string.Empty);
+				// filename, path, page, scrollpositionx, scrollpositiony
+				Environment.General.LoadStringOption("FileName", string.Empty);
+				Environment.General.LoadStringOption("Path", string.Empty);
 				Environment.General.LoadStringOption("ContextMode", Misc.ContextMode.WorkFolder.ToString());
 
-                Environment.General.LoadIntOption("Page", 0);
-                Environment.General.LoadIntOption("ScrollPositionX", 0);
-                Environment.General.LoadIntOption("ScrollPositionY", 0);
+				Environment.General.LoadIntOption("Page", 0);
+				Environment.General.LoadIntOption("ScrollPositionX", 0);
+				Environment.General.LoadIntOption("ScrollPositionY", 0);
 
-                Environment.General.LoadIntOption("DocID", 0);
-                Environment.General.LoadIntOption("ImageID", -1);
+				Environment.General.LoadIntOption("DocID", 0);
+				Environment.General.LoadIntOption("ImageID", -1);
 
-                // Величина максимальной задержки получения сообщения(макс. время хранения принятого сообщения в буфере сообщений), сек
-                // Для изменения значения прописать значение в реестре
-                int messageMaxDelayInterval = Environment.General.LoadIntOption("MessagesRefreshTimeout", 2000);
+				// Величина максимальной задержки получения сообщения(макс. время хранения принятого сообщения в буфере сообщений), сек
+				// Для изменения значения прописать значение в реестре
+				int messageMaxDelayInterval = Environment.General.LoadIntOption("MessagesRefreshTimeout", 2000);
 
-                // Проверка на диапазон значений. От 1000 милисек до 60000 милисек
-                if (messageMaxDelayInterval >= 1000 && messageMaxDelayInterval <= 60000)
-                    gotMessageTimeout = messageMaxDelayInterval;
+				// Проверка на диапазон значений. От 1000 милисек до 60000 милисек
+				if(messageMaxDelayInterval >= 1000 && messageMaxDelayInterval <= 60000)
+					gotMessageTimeout = messageMaxDelayInterval;
 
-                // масштаб документа
-                zoomCombo.Text = Environment.Layout.LoadStringOption("Zoom", Environment.StringResources.GetString("ToWidth"));
+				// масштаб документа
+				zoomCombo.Text = Environment.Layout.LoadStringOption("Zoom", Environment.StringResources.GetString("ToWidth"));
 
-                // установка "нажатости" кнопки в зависимости от режима картинки
-                selectionButton.Checked = docControl.SelectionMode;
+				// установка "нажатости" кнопки в зависимости от режима картинки
+				selectionButton.Checked = docControl.SelectionMode;
 
-                // установка в меню цвета и масштабирования
-                switch (docControl.GetImagePalette())
-                {
-                    case 1:
-                        menuColor1.Checked = true;
-                        break;
+				// установка в меню цвета и масштабирования
+				switch(docControl.GetImagePalette())
+				{
+					case 1:
+						menuColor1.Checked = true;
+						break;
 
-                    case 2:
-                        menuColor2.Checked = true;
-                        break;
+					case 2:
+						menuColor2.Checked = true;
+						break;
 
-                    case 3:
-                        menuColor3.Checked = true;
-                        break;
-                }
+					case 3:
+						menuColor3.Checked = true;
+						break;
+				}
 
-                switch (docControl.GetDisplayScaleAlgorithm())
-                {
-                    case 1:
-                        menuScale1.Checked = true;
-                        break;
+				switch(docControl.GetDisplayScaleAlgorithm())
+				{
+					case 1:
+						menuScale1.Checked = true;
+						break;
 
-                    case 2:
-                        menuScale2.Checked = true;
-                        break;
+					case 2:
+						menuScale2.Checked = true;
+						break;
 
-                    case 3:
-                        menuScale3.Checked = true;
-                        break;
-                }
+					case 3:
+						menuScale3.Checked = true;
+						break;
+				}
 
-                // инициализация датагрида
-                docGrid.Init(Environment.Layout, this);
+				// инициализация датагрида
+				docGrid.Init(Environment.Layout, this);
 
-                // инициализация инфогрида
-                infoGrid.Init(Environment.Layout, this);
-                SetInfoPlace();
+				// инициализация инфогрида
+				infoGrid.Init(Environment.Layout, this);
+				SetInfoPlace();
 
-                // Максимальное число результатов поиска
+				// Максимальное число результатов поиска
 				maxSearchResults = Environment.General.LoadIntOption("MaxSearchResults", maxSearchResults);
-                               
 
-                // таймер статусбара
-                statusBarTimer = new System.Windows.Forms.Timer();
-                statusBarTimer.Tick += StatusBarTimerProcessor;
 
-                statusBarTimer.Interval =
-                    (int)Convert.ToUInt32((DateTime.Today.AddDays(1) - DateTime.Now.AddMinutes(1)).TotalMilliseconds);
-                statusBarTimer.Start();
-                //обновление статуса 
-                if (statusBar != null)
-                    statusBar.Panels[3].Text = DateTime.Now.ToString("dd.MM.yyyy");
+				// таймер статусбара
+				statusBarTimer = new System.Windows.Forms.Timer();
+				statusBarTimer.Tick += StatusBarTimerProcessor;
+
+				statusBarTimer.Interval =
+					(int)Convert.ToUInt32((DateTime.Today.AddDays(1) - DateTime.Now.AddMinutes(1)).TotalMilliseconds);
+				statusBarTimer.Start();
+				//обновление статуса 
+				if(statusBar != null)
+					statusBar.Panels[3].Text = DateTime.Now.ToString("dd.MM.yyyy");
 
 				if(Convert.ToBoolean(Environment.General.LoadStringOption("CatchScan", false.ToString())))
 				{
@@ -177,15 +176,15 @@ namespace Kesco.App.Win.DocView.Forms
 						t++;
 					}
 				}
-                DocControlComponent.DocumentSaved += docComponent_DocumentSaved;
-                DocControlComponent.FaxInContactCreated += Lib.Win.Document.Controls.DocControl.docComponent_FaxInContactCreated;
-                docControl.NeedRefreshGrid += docControl_NeedRefreshGrid;
-            }
-            catch (Exception ex)
-            {
-                Lib.Win.Data.Env.WriteToLog(ex);
-            }
-        }
+				DocControlComponent.DocumentSaved += docComponent_DocumentSaved;
+				DocControlComponent.FaxInContactCreated += Lib.Win.Document.Controls.DocControl.docComponent_FaxInContactCreated;
+				docControl.NeedRefreshGrid += docControl_NeedRefreshGrid;
+			}
+			catch(Exception ex)
+			{
+				Lib.Win.Data.Env.WriteToLog(ex);
+			}
+		}
 
 		private void InitializeTranlation()
 		{
@@ -724,7 +723,7 @@ namespace Kesco.App.Win.DocView.Forms
                     int imgID = 0;
                     Environment.DocImageData.DocImageInsert(server.ID, fileName, ref imgID, ref docId, 0, "",
                                                             DateTime.MinValue, "", "", false, creationTime, 0,
-                                                            false, typeId, count);
+															false, typeId, isPDF?"PDF":"TIF", count);
                     if (docControl.DocumentID == docId)
                         docControl.RefreshDoc();
                     else
@@ -1444,9 +1443,15 @@ namespace Kesco.App.Win.DocView.Forms
                                                                                                menuSettingsFilter,
                                                                                                settingsFilterButton
                                                                                            });
+				Environment.CmdManager.Commands.Add(new CommandManagement.Command(
+													  "SettingsFolder",
+													  On_SettingsFolder,
+													  UpdateCommand_SettingsFolder));
 
-                // SavePart
-                if (savePartButton != null && !Environment.CmdManager.Commands.Contains("SavePart"))
+				Environment.CmdManager.Commands["SettingsFolder"].CommandInstances.Add(menuItemFolders);
+
+				// SavePart
+				if (savePartButton != null && !Environment.CmdManager.Commands.Contains("SavePart"))
                 {
                     Environment.CmdManager.Commands.Add(new CommandManagement.Command(
                                                             "SavePart",
@@ -2285,8 +2290,8 @@ namespace Kesco.App.Win.DocView.Forms
         public void On_SendFax(CommandManagement.Command cmd)
         {
 			try
-			{
-				//SendFax();
+			{               
+                //SendFax();
 				SendFaxNew();
 			}
 			catch(Exception ex)
@@ -2306,7 +2311,11 @@ namespace Kesco.App.Win.DocView.Forms
             int code = -1;
             try
             {
-                if (docGrid.IsSingle)
+                if ((docGrid.IsScaner() || docGrid.IsDiskImages()) && !Environment.IsFaxSenderWithOutSave())
+                {
+                    code = -2;
+                }
+                else if (docGrid.IsSingle)
                 {
                     if (docGrid.IsDBDocs() && docControl.CanSendOut)
                     {
@@ -2334,17 +2343,38 @@ namespace Kesco.App.Win.DocView.Forms
                 {
                     if (docGrid.IsDBDocs())
                     {
-                        code = Environment.DocData.CheckFaxSenderRule(string.Join(",", docGrid.GetCurIDs().Select(x => x.ToString()).ToArray()));
-                        if (code == 0)
-                        {
-                            new SendFaxDialog(docGrid.GetCurIDs(),
-                                              docGrid.GetSelectedValues(Environment.DocData.MainImageIDField));
-                            code = -1;
-                        }
-                        else
-                            if (code == -1)
-                                code = 0;
-                    }
+						var mainImgIDs = docGrid.GetSelectedValues(Environment.DocData.MainImageIDField);
+						var IDs = docGrid.GetCurIDs();
+						var selectedIDs = new List<int>();
+						var selectedImageIDs = new ArrayList();
+						for(int i = 0; i < mainImgIDs.Length; i++)
+						{
+							if(mainImgIDs[i] is int && (int)mainImgIDs[i] > 0)
+							{
+								selectedIDs.Add(IDs[i]);
+								selectedImageIDs.Add(mainImgIDs[i]);
+							}
+						}
+						if(selectedIDs.Count > 0)
+						{
+							code = Environment.DocData.CheckFaxSenderRule(string.Join(",", selectedIDs.Select(x => x.ToString()).ToArray()));
+							if(code == 0)
+							{
+								if(selectedIDs.Count < IDs.Length)
+									code = -3;
+								if(selectedIDs.Count > 0)
+									new SendFaxDialog(selectedIDs.ToArray(),
+													  selectedImageIDs.ToArray());
+								if(code > -1)
+									code = -1;
+							}
+							else
+								if(code == -1)
+								code = 0;
+						}
+						else
+							code = -3; 
+					}
                     else
                         if (docGrid.IsFaxes())
                         {
@@ -2386,11 +2416,19 @@ namespace Kesco.App.Win.DocView.Forms
             {
                 Lib.Win.Data.Env.WriteToLog(ex);
             }
+
+
             switch (code)
             {
                 case -1://всё прошло хорошо
                     break;
-                case 0://нет прав на отправку факсов
+                case -2://нет прав для отправки не сохраненного документа
+                    ErrorShower.OnShowError(this, Environment.StringResources.GetString("MainFormDialog.SendFax.Message_2"), Environment.StringResources.GetString("MainFormDialog.ErrorSend"));
+                    break;
+				case -3://Документы не имеют изображения
+					ErrorShower.OnShowError(this, Environment.StringResources.GetString("MainFormDialog.SendFax.Message_3"), Environment.StringResources.GetString("MainFormDialog.ErrorSend"));
+					break;
+				case 0://нет прав на отправку факсов
                     ErrorShower.OnShowError(this, Environment.StringResources.GetString("MainFormDialog.SendFax.Message1"), Environment.StringResources.GetString("MainFormDialog.ErrorSend"));
                     break;
                 default://нет прав на отправку факсов определённого документа
@@ -2400,107 +2438,131 @@ namespace Kesco.App.Win.DocView.Forms
                     break;
             }
         }
-        
 
-        private void SendFaxNew()
-        {
-            int code = -1;
-            try
-            {
-                if(docGrid.IsSingle)
-                {
-                    if(docGrid.IsDBDocs() && docControl.CanSendOut)
-                    {
-                        code = docControl.SendFaxNew();
-                    }
-                    else if(docGrid.IsFaxes())
-                    {
-                        if(Environment.IsFaxSenderFolder((folders.SelectedNode as FolderTree.FolderNodes.FaxNodes.FaxNode).ID))
-                        {
-                            if(docGrid.IsFaxesOut())
-                            {
-                                var faxOutID = (int)docGrid.GetCurValue(Environment.FaxData.IDField);
-                                code = docControl.SendFax(faxOutID);
-                            }
-                            else
-                                code = docControl.SendFaxNew();
-                        }
-                        else
-                            code = 0;
-                    }
-                    else
-                        code = docControl.SendFaxNew();
-                }
-                else if(docGrid.IsMultiple)
-                {
-                    if(docGrid.IsDBDocs())
-                    {
-                        code = Environment.DocData.CheckFaxSenderRule(string.Join(",", docGrid.GetCurIDs().Select(x => x.ToString()).ToArray()));
-                        if(code == 0)
-                        {
-                            SendOutDialog.Send(docGrid.GetCurIDs(), docGrid.GetSelectedValues(Environment.DocData.MainImageIDField));
-                            code = -1;
-                        }
-                        else
-                            if(code == -1)
-                                code = 0;
-                    }
-                    else
-                        if(docGrid.IsFaxes())
-                        {
-                            if(Environment.IsFaxSenderFolder((folders.SelectedNode as FolderTree.FolderNodes.FaxNodes.FaxNode).ID))
-                            {
-                                if(docGrid.IsFaxesOut())
-                                {
-                                    new SendFaxDialog(docGrid.GetSelectedValues(Environment.FaxData.FileNameField),
-                                                      docGrid.MakeCurDocsString(),
-                                                      docGrid.GetSelectedValues(Environment.FaxData.IDField));
-                                }
-                                else if(docGrid.IsFaxes())
-                                {
-                                    SendOutDialog.Send(docGrid.GetSelectedValues(Environment.FaxData.FileNameField),
-                                                      docGrid.MakeCurDocsString());
-                                }
-                            }
-                            else
-                                code = 0;
-                        }
-                        else if(Environment.IsFaxSender())
-                        {
-                            if(docGrid.IsScaner())
-                            {
-                                SendOutDialog.Send(docGrid.GetSelectedValues(Environment.ScanReader.FullNameField),
-                                                  docGrid.MakeCurDocsString());
-                            }
-                            else if(docGrid.IsDiskImages())
-                            {
-                                SendOutDialog.Send(docGrid.GetSelectedValues(Environment.ImageReader.FullNameField),
-                                                  docGrid.MakeCurDocsString());
-                            }
-                        }
-                        else
-                            code = 0;
-                }
-            }
-            catch(Exception ex)
-            {
-                Lib.Win.Data.Env.WriteToLog(ex);
-            }
-            switch(code)
-            {
-                case -1://всё прошло хорошо
-                    break;
-                case 0://нет прав на отправку факсов
-                    ErrorShower.OnShowError(this, Environment.StringResources.GetString("MainFormDialog.SendFax.Message1"), Environment.StringResources.GetString("MainFormDialog.ErrorSend"));
-                    break;
-                default://нет прав на отправку факсов определённого документа
-                    ErrorShower.OnShowError(this, string.Concat(Environment.StringResources.GetString("MainFormDialog.SendFax.Message1"),
-                        "\n", (docGrid.IsDBDocs() ? DBDocString.Format(code) : docGrid.Style.MakeDocString(docGrid.GetIndex(code))))
-                        , Environment.StringResources.GetString("MainFormDialog.ErrorSend"));
-                    break;
-            }
-        }
-        
+		private void SendFaxNew()
+		{
+			//SendFax();return;
+			int code = -1;
+			try
+			{
+				if((docGrid.IsScaner() || docGrid.IsDiskImages()) && !Environment.IsFaxSenderWithOutSave())
+				{
+					code = -2;
+				}
+				else if(docGrid.IsSingle)
+				{
+					if(docGrid.IsDBDocs() && docControl.CanSendOut)
+					{
+						code = docControl.SendFaxNew();
+					}
+					else if(docGrid.IsFaxes())
+					{
+						if(Environment.IsFaxSenderFolder((folders.SelectedNode as FolderTree.FolderNodes.FaxNodes.FaxNode).ID))
+						{
+							if(docGrid.IsFaxesOut())
+							{
+								var faxOutID = (int)docGrid.GetCurValue(Environment.FaxData.IDField);
+								code = docControl.SendFax(faxOutID);
+							}
+							else
+								code = docControl.SendFaxNew();
+						}
+						else
+							code = 0;
+					}
+					else
+						code = docControl.SendFaxNew();
+				}
+				else if(docGrid.IsMultiple)
+				{
+					if(docGrid.IsDBDocs())
+					{
+						var mainImgIDs = docGrid.GetSelectedValues(Environment.DocData.MainImageIDField);
+						var IDs = docGrid.GetCurIDs();
+						var selectedIDs = new List<int>();
+						var selectedImageIDs = new ArrayList();
+						for(int i = 0; i < mainImgIDs.Length; i++)
+						{
+							if(mainImgIDs[i] is int && (int)mainImgIDs[i] > 0)
+							{
+								selectedIDs.Add(IDs[i]);
+								selectedImageIDs.Add(mainImgIDs[i]);
+							}
+						}
+						code = Environment.DocData.CheckFaxSenderRule(string.Join(",", selectedIDs.Select(x => x.ToString()).ToArray()));
+						if(code == 0)
+						{
+							if(selectedIDs.Count < IDs.Length)
+								code = -3;
+							SendOutDialog.Send(docGrid.GetCurIDs(), docGrid.GetSelectedValues(Environment.DocData.MainImageIDField));
+							code = -1;
+						}
+						else
+							if(code == -1)
+							code = 0;
+					}
+					else
+						if(docGrid.IsFaxes())
+					{
+						if(Environment.IsFaxSenderFolder((folders.SelectedNode as FolderTree.FolderNodes.FaxNodes.FaxNode).ID))
+						{
+							if(docGrid.IsFaxesOut())
+							{
+								new SendFaxDialog(docGrid.GetSelectedValues(Environment.FaxData.FileNameField),
+												  docGrid.MakeCurDocsString(),
+												  docGrid.GetSelectedValues(Environment.FaxData.IDField));
+							}
+							else if(docGrid.IsFaxes())
+							{
+								SendOutDialog.Send(docGrid.GetSelectedValues(Environment.FaxData.FileNameField),
+												  docGrid.MakeCurDocsString());
+							}
+						}
+						else
+							code = 0;
+					}
+					else if(Environment.IsFaxSender())
+					{
+						if(docGrid.IsScaner())
+						{
+							SendOutDialog.Send(docGrid.GetSelectedValues(Environment.ScanReader.FullNameField),
+											  docGrid.MakeCurDocsString());
+						}
+						else if(docGrid.IsDiskImages())
+						{
+							SendOutDialog.Send(docGrid.GetSelectedValues(Environment.ImageReader.FullNameField),
+											  docGrid.MakeCurDocsString());
+						}
+					}
+					else
+						code = 0;
+				}
+			}
+			catch(Exception ex)
+			{
+				Lib.Win.Data.Env.WriteToLog(ex);
+			}
+			switch(code)
+			{
+				case -1://всё прошло хорошо
+					break;
+				case -2://нет прав для отправки не сохраненного документа
+					ErrorShower.OnShowError(this, Environment.StringResources.GetString("MainFormDialog.SendFax.Message_2"), Environment.StringResources.GetString("MainFormDialog.ErrorSend"));
+					break;
+				case -3://Документы не имеют изображения
+					ErrorShower.OnShowError(this, Environment.StringResources.GetString("MainFormDialog.SendFax.Message_3"), Environment.StringResources.GetString("MainFormDialog.ErrorSend"));
+					break;
+				case 0://нет прав на отправку факсов
+					ErrorShower.OnShowError(this, Environment.StringResources.GetString("MainFormDialog.SendFax.Message1"), Environment.StringResources.GetString("MainFormDialog.ErrorSend"));
+					break;
+				default://нет прав на отправку факсов определённого документа
+					ErrorShower.OnShowError(this, string.Concat(Environment.StringResources.GetString("MainFormDialog.SendFax.Message1"),
+						"\n", (docGrid.IsDBDocs() ? DBDocString.Format(code) : docGrid.Style.MakeDocString(docGrid.GetIndex(code))))
+						, Environment.StringResources.GetString("MainFormDialog.ErrorSend"));
+					break;
+			}
+		}
+		
 
         // Document Properties
 		public void On_DocProperties(CommandManagement.Command cmd)
@@ -2649,20 +2711,21 @@ namespace Kesco.App.Win.DocView.Forms
             }
         }
 
-        // Search
-        public void On_Search(CommandManagement.Command cmd)
-        {
-            try
-            {
-                var dialog = new XmlSearchForm(0, OptionsDialog.EnabledFeatures.All);
-                dialog.DialogEvent += SearchDialog_DialogEvent;
-                dialog.Show();
-            }
-            catch (Exception ex)
-            {
-                Lib.Win.Data.Env.WriteToLog(ex);
-            }
-        }
+		// Search
+		public void On_Search(CommandManagement.Command cmd)
+		{
+			//docControl.TestImage(Lib.Win.Document.Environment.ActionBefore.None);
+			try
+			{
+				var dialog = new XmlSearchForm(0, OptionsDialog.EnabledFeatures.All);
+				dialog.DialogEvent += SearchDialog_DialogEvent;
+				dialog.Show();
+			}
+			catch(Exception ex)
+			{
+				Lib.Win.Data.Env.WriteToLog(ex);
+			}
+		}
 
         // FindID
         public void On_FindID(CommandManagement.Command cmd)
@@ -3344,15 +3407,26 @@ namespace Kesco.App.Win.DocView.Forms
                 button.Checked = push;
         }
 
-        // SavePart
-        public void On_SavePart(CommandManagement.Command cmd)
-        {
-            if (!IsDisplayedSingle())
-                return;
-            //docControl.CurDocString = docGrid.DocStringToSave();
-            docControl.TestImage(Lib.Win.Document.Environment.ActionBefore.SavePart);
-            docControl.SavePart();
-        }
+		public void  On_SettingsFolder(CommandManagement.Command cmd)
+		{
+			Settings.SettingsAdditionDialog dialog = new Settings.SettingsAdditionDialog();
+            dialog.DialogEvent += SettingsDialog_DialogEvent;
+            dialog.Show();
+		}
+
+		public void UpdateCommand_SettingsFolder(CommandManagement.Command cmd)
+		{
+		}
+
+		// SavePart
+		public void On_SavePart(CommandManagement.Command cmd)
+		{
+			if(!IsDisplayedSingle())
+				return;
+			//docControl.CurDocString = docGrid.DocStringToSave();
+			docControl.TestImage(Lib.Win.Document.Environment.ActionBefore.SavePart);
+			docControl.SavePart();
+		}
 
         public void UpdateCommand_SavePart(CommandManagement.Command cmd)
         {
@@ -5043,11 +5117,11 @@ namespace Kesco.App.Win.DocView.Forms
 				node.LoadDocs(docGrid, true, node.IsDocument()?-1:node.CurID, null);
 				InvokeIfRequired(() =>
 					{
-						if(Environment.FolderUpdateTime > 0 && node.IsFound() && node.ID != 0)
+						if(Environment.UserSettings.FolderUpdateTime > 0 && node.IsFound() && node.ID != 0)
 						{
 							folderUpdateTimer = new System.Windows.Forms.Timer();
 							folderUpdateTimer.Enabled = true;
-							folderUpdateTimer.Interval = Environment.FolderUpdateTime * 60000;
+							folderUpdateTimer.Interval = Environment.UserSettings.FolderUpdateTime * 60000;
 							folderUpdateTimer.Tick += new EventHandler(folderUpdateTimer_Tick);
 							folderUpdateTimer.Start();
 						}
@@ -5847,8 +5921,6 @@ namespace Kesco.App.Win.DocView.Forms
 					Environment.Layout.LoadStringOption("ShowPagesPanel", true.ToString(), ShowPagesPanel);
 					docControl.ShowWebPanel = Convert.ToBoolean(Environment.Layout.LoadStringOption("ShowWebPanel", docControl.ShowWebPanel.ToString()));
 				}
-
-				Environment.FolderUpdateTime = Environment.General.LoadIntOption("FolderUpdateTime", 0);
 
 				// отображение панели заметок
 				annotationBar.Visible = false;
@@ -8702,7 +8774,7 @@ namespace Kesco.App.Win.DocView.Forms
                     Process.Start(Application.ExecutablePath);
         }
 
-        private void SendMessageDialog_NeedSendWindow(int[] ids, string forAllMessage, ArrayList forAllRecipients, Hashtable personMessages)
+        private void SendMessageDialog_NeedSendWindow(int[] ids, string forAllMessage, SynchronizedCollection<int> forAllRecipients, Hashtable personMessages)
         {
             if (InvokeRequired)
                 BeginInvoke(new SendMessageDialog.SendDelegate(ShowErrorAndMessageWindow), new object[] { ids, forAllMessage, forAllRecipients, personMessages });
@@ -8710,16 +8782,16 @@ namespace Kesco.App.Win.DocView.Forms
                 ShowErrorAndMessageWindow(ids, forAllMessage, forAllRecipients, personMessages);
         }
 
-        private void ShowErrorAndMessageWindow(int[] ids, string forAllMessage, ArrayList forAllRecipients, Hashtable personMessages)
-        {
-            var sd = new SendMessageDialog(ids);
-            sd.Show();
-            sd.AllText = forAllMessage;
-            sd.AllUsers = forAllRecipients;
-            sd.PersonSenders = personMessages;
-            var mf = new Lib.Win.MessageForm(Environment.StringResources.GetString("MainFormDialog.ShowErrorAndMessageWindow.Message1"), Environment.StringResources.GetString("MainFormDialog.ShowErrorAndMessageWindow.Title1"));
-            sd.ShowSubForm(mf);
-        }
+		private void ShowErrorAndMessageWindow(int[] ids, string forAllMessage, SynchronizedCollection<int> forAllRecipients, Hashtable personMessages)
+		{
+			var sd = new SendMessageDialog(ids);
+			sd.Show();
+			sd.AllText = forAllMessage;
+			sd.AllUsers = forAllRecipients;
+			sd.PersonSenders = personMessages;
+			//var mf = new Lib.Win.MessageForm(Environment.StringResources.GetString("MainFormDialog.ShowErrorAndMessageWindow.Message1"), Environment.StringResources.GetString("MainFormDialog.ShowErrorAndMessageWindow.Title1"));
+			//sd.ShowSubForm(mf);
+		}
 
 		private void SendMessageDialog_MessageSend(bool remove, int[] ids)
 		{

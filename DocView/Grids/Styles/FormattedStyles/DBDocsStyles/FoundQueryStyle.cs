@@ -11,17 +11,17 @@ namespace Kesco.App.Win.DocView.Grids.Styles.FormattedStyles.DBDocsStyles
             FriendlyName = Environment.StringResources.GetString("Inquiries");
         }
 
-        public static bool HasInstance()
+        public static new bool HasInstance()
         {
             return instance != null;
         }
 
         public static new Style Instance(DocGrid grid)
-        {
+		{
             return instance ?? (instance = new FoundQueryStyle(grid));
         }
 
-		internal static void DropInstance()
+		internal static new void DropInstance()
 		{
 			if(instance != null)
 				instance = null;

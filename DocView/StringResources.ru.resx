@@ -918,6 +918,9 @@
   <data name="MainFormDialog.SendFax.Message1" xml:space="preserve">
     <value>У вас нет прав на отправку из офиса.</value>
   </data>
+  <data name="MainFormDialog.SendFax.Message_2" xml:space="preserve">
+    <value>Для отправки документа из офиса сначала необходимо сохранить его в Архив документов</value>
+  </data>
   <data name="MainFormDialog.ErrorSend" xml:space="preserve">
     <value>Ошибка отправки</value>
   </data>
@@ -1064,5 +1067,8 @@
   </data>
   <data name="MainForm.UNDOAddImageToDoc" xml:space="preserve">
     <value>Отменить добавление изображения</value>
+  </data>
+  <data name="MainFormDialog.SendFax.Message_3" xml:space="preserve">
+    <value>Некоторые документы не имеют изображений.</value>
   </data>
 </root>

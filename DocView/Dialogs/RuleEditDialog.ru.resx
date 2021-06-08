@@ -61,7 +61,7 @@
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataTable="true">
+    <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
@@ -112,61 +112,47 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnCancel.Text" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Отмена</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 22</value>
+    <value>26, 22</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 13</value>
+    <value>60, 35</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Employee </value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 110</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 13</value>
+    <value>Подписал сотрудник</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Document type</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>44, 56</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 13</value>
+    <value>Тип документа</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Person</value>
+    <value>Лицо</value>
   </data>
   <data name="employeeBlock.ButtonText" xml:space="preserve">
-    <value>Choose</value>
+    <value>Выбрать</value>
   </data>
   <data name="personSearchBlock.ButtonText" xml:space="preserve">
-    <value>Select</value>
-  </data>
-  <data name="DocTypeAllchkBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 17</value>
+    <value>Выбрать</value>
   </data>
   <data name="DocTypeAllchkBox.Text" xml:space="preserve">
-    <value>All Types</value>
-  </data>
-  <data name="PersonAllchkBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 17</value>
+    <value>Все типы</value>
   </data>
   <data name="PersonAllchkBox.Text" xml:space="preserve">
-    <value>All Persons</value>
+    <value>Все лица</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Rule for setting the stamp</value>
+    <value>Правила постановки штампа</value>
   </data>
 </root>

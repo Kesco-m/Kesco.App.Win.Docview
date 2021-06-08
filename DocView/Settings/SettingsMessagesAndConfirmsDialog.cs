@@ -55,15 +55,6 @@ namespace Kesco.App.Win.DocView.Settings
 					rbReadOnEndAskMe.Checked = true;
 					break;
 			}
-
-			checkBoxUpdateSearchFolder.Checked = Environment.FolderUpdateTime > 0;
-			if(checkBoxUpdateSearchFolder.Checked)
-			{
-				checkBoxUpdateSearchFolder.CheckState = CheckState.Checked;
-				textBoxUpdateFolderTime.Text = Environment.FolderUpdateTime.ToString();
-			}
-			else
-				textBoxUpdateFolderTime.Text = "15";
 		}
 
 		private void buttonOK_Click(object sender, EventArgs e)
@@ -96,43 +87,6 @@ namespace Kesco.App.Win.DocView.Settings
 				return;
 			}
 
-			bool update = false;
-			if(checkBoxUpdateSearchFolder.Checked)
-			{
-				int checkT = 0;
-				if(int.TryParse(textBoxUpdateFolderTime.Text, out checkT))
-				{
-					if(Environment.FolderUpdateTime != checkT)
-					{
-						if(checkT < minFolderTimeout || checkT > maxFolderTimeout)
-						{
-							MessageBox.Show(Environment.StringResources.GetString("SettingsMessagesAndConfirmsDialog.buttonOK_Click.Message1") +
-								minFolderTimeout.ToString() +
-								Environment.StringResources.GetString("SettingsMessagesAndConfirmsDialog.buttonOK_Click.Message2") +
-								maxFolderTimeout.ToString());
-							return;
-						}
-						update = true;
-						Environment.FolderUpdateTime = checkT;
-						Environment.General.Option("FolderUpdateTime").Value = checkT;
-					}
-				}
-				else
-				{
-					MessageBox.Show(Environment.StringResources.GetString("SettingsMessagesAndConfirmsDialog.buttonOK_Click.Message3"));
-					return;
-				}
-			}
-			else
-			{
-				if(Environment.FolderUpdateTime > 0)
-				{
-					update = true;
-					Environment.FolderUpdateTime = 0;
-					Environment.General.Option("FolderUpdateTime").Value = 0;
-				}
-			}
-
 			bool currentState = checkBoxBar.Checked;
 			Environment.General.Option("CatchScan").Value = currentState.ToString();
 			Environment.General.Save();
@@ -145,11 +99,6 @@ namespace Kesco.App.Win.DocView.Settings
 			Environment.UserSettings.MessageOnEndSign = checkBoxSignMessage.Checked;
 			Environment.UserSettings.ReadMessageOnEndWork = rbReadOnEndAlways.Checked ? (byte)0 : rbReadOnEndNever.Checked ? (byte)1 : (byte)2;
 
-			if(update)
-			{
-				End(DialogResult.Retry);
-				return;
-			}
 			if(barState != currentState)
 			{
 				End(DialogResult.Yes);
@@ -174,9 +123,5 @@ namespace Kesco.App.Win.DocView.Settings
 			checkBoxScan.Enabled = checkBoxBar.Checked;
 		}
 
-		private void checkBoxUpdateSearchFolder_CheckedChanged(object sender, EventArgs e)
-		{
-			textBoxUpdateFolderTime.Enabled = checkBoxUpdateSearchFolder.Checked;
-		}
 	}
 }

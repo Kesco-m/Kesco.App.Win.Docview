@@ -38,22 +38,22 @@ namespace Kesco.App.Win.DocView.Dialogs
 			this.label3 = new System.Windows.Forms.Label();
 			this.employeeBlock = new Kesco.Lib.Win.Document.Blocks.EmployeeBlock();
 			this.personSearchBlock = new Kesco.Lib.Win.Document.Blocks.PersonSearchBlock_1();
-			this.docTypeBlock = new DocTypeBlock();
+			this.docTypeBlock = new Kesco.Lib.Win.Document.Blocks.DocTypeBlock();
 			this.DocTypeAllchkBox = new System.Windows.Forms.CheckBox();
 			this.PersonAllchkBox = new System.Windows.Forms.CheckBox();
 			this.SuspendLayout();
 			// 
 			// btnCancel
 			// 
-			this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
 			resources.ApplyResources(this.btnCancel, "btnCancel");
+			this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
 			this.btnCancel.Name = "btnCancel";
 			this.btnCancel.UseVisualStyleBackColor = true;
 			// 
 			// btnOK
 			// 
-			this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
 			resources.ApplyResources(this.btnOK, "btnOK");
+			this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
 			this.btnOK.Name = "btnOK";
 			this.btnOK.UseVisualStyleBackColor = true;
 			// 
@@ -74,9 +74,9 @@ namespace Kesco.App.Win.DocView.Dialogs
 			// 
 			// employeeBlock
 			// 
+			resources.ApplyResources(this.employeeBlock, "employeeBlock");
 			this.employeeBlock.BackColor = System.Drawing.SystemColors.Control;
 			this.employeeBlock.ButtonSide = Kesco.Lib.Win.Document.Blocks.EmployeeBlock.ButtonSideEnum.Right;
-			resources.ApplyResources(this.employeeBlock, "employeeBlock");
 			this.employeeBlock.FullText = "";
 			this.employeeBlock.Name = "employeeBlock";
 			this.employeeBlock.ParamStr = "clid=3&UserAccountDisabled=0&return=1";
@@ -93,10 +93,10 @@ namespace Kesco.App.Win.DocView.Dialogs
 			// 
 			// docTypeBlock
 			// 
-			this.docTypeBlock.ID = 0;
 			resources.ApplyResources(this.docTypeBlock, "docTypeBlock");
+			this.docTypeBlock.ID = 0;
 			this.docTypeBlock.Name = "docTypeBlock";
-			this.docTypeBlock.Selected += new BlockEventHandler(this.docTypeBlock_Selected);
+			this.docTypeBlock.Selected += new Kesco.Lib.Win.Document.Blocks.BlockEventHandler(this.docTypeBlock_Selected);
 			// 
 			// DocTypeAllchkBox
 			// 

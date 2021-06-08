@@ -158,7 +158,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAACq
-        GQAAAk1TRnQBSQFMAgEBEgEAAXwBAwF8AQMBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        GQAAAk1TRnQBSQFMAgEBEgEAAYQBAwGEAQMBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAAVADAAEBAQABCAYAARQYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -289,7 +289,7 @@
     <value>folders</value>
   </data>
   <data name="&gt;&gt;folders.Type" xml:space="preserve">
-    <value>Kesco.App.Win.DocView.FolderTree.FolderTree, DocView, Version=0.6.1.35371, Culture=neutral, PublicKeyToken=null</value>
+    <value>Kesco.App.Win.DocView.FolderTree.FolderTree, DocView, Version=0.6.1.38708, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;folders.Parent" xml:space="preserve">
     <value>splitContainerTree.Panel1</value>
@@ -334,7 +334,7 @@
     <value>infoGrid</value>
   </data>
   <data name="&gt;&gt;infoGrid.Type" xml:space="preserve">
-    <value>Kesco.App.Win.DocView.Grids.InfoGrid, DocView, Version=0.6.1.35371, Culture=neutral, PublicKeyToken=null</value>
+    <value>Kesco.App.Win.DocView.Grids.InfoGrid, DocView, Version=0.6.1.38708, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;infoGrid.Parent" xml:space="preserve">
     <value>splitContainerList.Panel1</value>
@@ -370,7 +370,7 @@
     <value>docGrid</value>
   </data>
   <data name="&gt;&gt;docGrid.Type" xml:space="preserve">
-    <value>Kesco.App.Win.DocView.Grids.DocGrid, DocView, Version=0.6.1.35371, Culture=neutral, PublicKeyToken=null</value>
+    <value>Kesco.App.Win.DocView.Grids.DocGrid, DocView, Version=0.6.1.38708, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;docGrid.Parent" xml:space="preserve">
     <value>splitContainerList.Panel2</value>
@@ -541,7 +541,7 @@
     <value>docControl</value>
   </data>
   <data name="&gt;&gt;docControl.Type" xml:space="preserve">
-    <value>Kesco.Lib.Win.Document.Controls.DocControl, Document, Version=1.0.7055.35369, Culture=neutral, PublicKeyToken=null</value>
+    <value>Kesco.Lib.Win.Document.Controls.DocControl, Document, Version=1.0.7607.38540, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;docControl.Parent" xml:space="preserve">
     <value>splitContainerDoc.Panel1</value>
@@ -972,6 +972,9 @@
   <data name="mIColumns.Text" xml:space="preserve">
     <value>Columns...</value>
   </data>
+  <data name="menuItemFolders.Text" xml:space="preserve">
+    <value>Folders...</value>
+  </data>
   <data name="menuItem1.Text" xml:space="preserve">
     <value>-</value>
   </data>
@@ -1115,7 +1118,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABO
-        NAAAAk1TRnQBSQFMAgEBMAEAAXwBAwF8AQMBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        NAAAAk1TRnQBSQFMAgEBMAEAAYQBAwGEAQMBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAAdADAAEBAQABCAYAATQYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -1487,6 +1490,9 @@
   </data>
   <data name="pageNum.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
+  </data>
+  <data name="pageNum.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
   </data>
   <data name="pageNum.MaxLength" type="System.Int32, mscorlib">
     <value>10</value>
@@ -2074,19 +2080,19 @@
     <value>Show e-form under document</value>
   </data>
   <data name="TS_menuItemBetween.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 22</value>
+    <value>198, 22</value>
   </data>
   <data name="TS_menuItemBetween.Text" xml:space="preserve">
     <value>Under catalogue</value>
   </data>
   <data name="TS_menuItemLeft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 22</value>
+    <value>198, 22</value>
   </data>
   <data name="TS_menuItemLeft.Text" xml:space="preserve">
     <value>To the left of document</value>
   </data>
   <data name="TS_menuItemUnder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 22</value>
+    <value>198, 22</value>
   </data>
   <data name="TS_menuItemUnder.Text" xml:space="preserve">
     <value>Under the document</value>
@@ -2425,7 +2431,7 @@
     <value>opinionControl</value>
   </data>
   <data name="&gt;&gt;opinionControl.Type" xml:space="preserve">
-    <value>Kesco.Lib.Win.Opinion.OpinionControl, Win, Version=1.0.7055.35366, Culture=neutral, PublicKeyToken=null</value>
+    <value>Kesco.Lib.Win.Opinion.OpinionControl, Win, Version=1.0.7607.38537, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;opinionControl.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -2533,7 +2539,7 @@
     <value>annotationBar</value>
   </data>
   <data name="&gt;&gt;annotationBar.Type" xml:space="preserve">
-    <value>Kesco.App.Win.DocView.TaggedToolBar, DocView, Version=0.6.1.35371, Culture=neutral, PublicKeyToken=null</value>
+    <value>Kesco.App.Win.DocView.TaggedToolBar, DocView, Version=0.6.1.38708, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;annotationBar.Parent" xml:space="preserve">
     <value>$this</value>
@@ -3609,7 +3615,7 @@
     <value>tBBShowMessage</value>
   </data>
   <data name="&gt;&gt;tBBShowMessage.Type" xml:space="preserve">
-    <value>Kesco.Lib.Win.Document.Items.ToolStripSplitButtonCheckable, Document, Version=1.0.7055.35369, Culture=neutral, PublicKeyToken=null</value>
+    <value>Kesco.Lib.Win.Document.Items.ToolStripSplitButtonCheckable, Document, Version=1.0.7607.38540, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;TS_menuItemBetween.Name" xml:space="preserve">
     <value>TS_menuItemBetween</value>
@@ -3869,10 +3875,16 @@
   <data name="&gt;&gt;dspStampButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolBarButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;menuItemFolders.Name" xml:space="preserve">
+    <value>menuItemFolders</value>
+  </data>
+  <data name="&gt;&gt;menuItemFolders.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainFormDialog</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>Kesco.Lib.Win.FreeDialog, Win, Version=1.0.7055.35366, Culture=neutral, PublicKeyToken=null</value>
+    <value>Kesco.Lib.Win.FreeDialog, Win, Version=1.0.7607.38537, Culture=neutral, PublicKeyToken=null</value>
   </data>
 </root>

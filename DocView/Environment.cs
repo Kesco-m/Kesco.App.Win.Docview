@@ -181,11 +181,6 @@ namespace Kesco.App.Win.DocView
 			}
 		}
 
-		/// <summary>
-		/// время обновления папок запросов.
-		/// </summary>
-		public static int FolderUpdateTime;
-
 		public static CultureInfo CurCultureInfo
 		{
 			get { return curCultureInfo ?? (curCultureInfo = Thread.CurrentThread.CurrentCulture); }
@@ -1003,10 +998,18 @@ namespace Kesco.App.Win.DocView
 			return IsConnected && EmpData.IsFaxSender();
 		}
 
-		/// <summary>
-		///   проверка на возможность отправки из офиса по коду документа
+        /// <summary>
+		///   проверка на возможность отправки из офиса с диска и со сканера
 		/// </summary>
-		public static bool IsFaxSender(int docID)
+		public static bool IsFaxSenderWithOutSave()
+        {
+            return IsConnected && EmpData.IsFaxSenderWithOutSave();
+        }
+
+        /// <summary>
+        ///   проверка на возможность отправки из офиса по коду документа
+        /// </summary>
+        public static bool IsFaxSender(int docID)
 		{
 			if(docID <= 0)
 				return IsFaxSender();

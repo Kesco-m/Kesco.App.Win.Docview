@@ -402,6 +402,9 @@
   <data name="MainFormDialog.SendFax.Message1" xml:space="preserve">
     <value>You does not have right to send out of office</value>
   </data>
+  <data name="MainFormDialog.SendFax.Message_2" xml:space="preserve">
+    <value>To send a document from the office, you first need to save it to the Document Archive</value>
+  </data>
   <data name="ToChange" xml:space="preserve">
     <value>Change</value>
   </data>
@@ -566,7 +569,7 @@ Restart now?
   <data name="MainForm.MainFormDialog.On_DocProperties.Message1" xml:space="preserve">
     <value>Fax NOT sending: </value>
   </data>
-   <data name="MainForm.MainFormDialog.On_DeleteDoc.Message3" xml:space="preserve">
+  <data name="MainForm.MainFormDialog.On_DeleteDoc.Message3" xml:space="preserve">
     <value>Doument will be delete finally, without chance to restore.</value>
   </data>
   <data name="DocProperties.buttonOK_Click.Message4" xml:space="preserve">
@@ -1068,5 +1071,8 @@ Remove them and create a new one?</value>
   </data>
   <data name="Properties.PropertiesFolderRuleSearchDialog.Message2" xml:space="preserve">
     <value>Edit folder rule</value>
+  </data>
+  <data name="MainFormDialog.SendFax.Message_3" xml:space="preserve">
+    <value>Some of the document do not contain an image</value>
   </data>
 </root>

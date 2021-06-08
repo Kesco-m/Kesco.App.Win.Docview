@@ -3467,8 +3467,7 @@ namespace Kesco.App.Win.DocView.Forms
 						File.Move(docControl.FileName, path);
 						int imgID = 0;
 						Environment.DocImageData.DocImageInsert(server.ID, fileName, ref imgID, ref docID, 0, "",
-																DateTime.MinValue, "", "", false, creationTime, 0, true,
-																((int[])Tag)[1]);
+							DateTime.MinValue, "", "", false, creationTime, 0, true, docControl.ImageType,((int[])Tag)[1]);
 						Environment.General.Option("DocID").Value = docID;
 					}
 					form.Owner = null;

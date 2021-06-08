@@ -286,6 +286,7 @@ namespace Kesco.App.Win.DocView.Forms
 			this.NoteButton = new System.Windows.Forms.ToolBarButton();
 			this.imageStampButton = new System.Windows.Forms.ToolBarButton();
 			this.dspStampButton = new System.Windows.Forms.ToolBarButton();
+			this.menuItemFolders = new System.Windows.Forms.MenuItem();
 			((System.ComponentModel.ISupportInitialize)(this.splitContainerMain)).BeginInit();
 			this.splitContainerMain.Panel1.SuspendLayout();
 			this.splitContainerMain.Panel2.SuspendLayout();
@@ -429,10 +430,13 @@ namespace Kesco.App.Win.DocView.Forms
 			this.infoGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
 			this.infoGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
 			this.infoGrid.Cursor = System.Windows.Forms.Cursors.Default;
+			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
 			dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
 			dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
 			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
 			this.infoGrid.DefaultCellStyle = dataGridViewCellStyle2;
 			resources.ApplyResources(this.infoGrid, "infoGrid");
 			this.infoGrid.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
@@ -503,6 +507,7 @@ namespace Kesco.App.Win.DocView.Forms
 			// 
 			// docControl
 			// 
+			this.docControl.AlwaysShow = true;
 			this.docControl.AnnotationDraw = false;
 			this.docControl.CurDocString = null;
 			this.docControl.Cursor = System.Windows.Forms.Cursors.WaitCursor;
@@ -521,6 +526,8 @@ namespace Kesco.App.Win.DocView.Forms
 			this.docControl.SelectionMode = false;
 			this.docControl.ShowThumbPanel = false;
 			this.docControl.ShowWebPanel = false;
+			this.docControl.SplinterPlace = new System.Drawing.Point(200, 61);
+			this.docControl.Subscribe = new System.Guid("00000000-0000-0000-0000-000000000000");
 			this.docControl.WatchOnFile = false;
 			this.docControl.Zoom = 100;
 			this.docControl.ZoomText = "";
@@ -1059,6 +1066,7 @@ namespace Kesco.App.Win.DocView.Forms
             this.menuSettingsShow,
             this.menuSettingsLinkShow,
             this.mIColumns,
+            this.menuItemFolders,
             this.menuItem1,
             this.menuDoc5,
             this.menuDoc6,
@@ -1102,12 +1110,12 @@ namespace Kesco.App.Win.DocView.Forms
 			// 
 			// menuItem1
 			// 
-			this.menuItem1.Index = 6;
+			this.menuItem1.Index = 7;
 			resources.ApplyResources(this.menuItem1, "menuItem1");
 			// 
 			// menuDoc5
 			// 
-			this.menuDoc5.Index = 7;
+			this.menuDoc5.Index = 8;
 			this.menuDoc5.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
             this.menuColor1,
             this.menuColor2,
@@ -1134,7 +1142,7 @@ namespace Kesco.App.Win.DocView.Forms
 			// 
 			// menuDoc6
 			// 
-			this.menuDoc6.Index = 8;
+			this.menuDoc6.Index = 9;
 			this.menuDoc6.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
             this.menuScale1,
             this.menuScale2,
@@ -1161,24 +1169,24 @@ namespace Kesco.App.Win.DocView.Forms
 			// 
 			// menuItem10
 			// 
-			this.menuItem10.Index = 9;
+			this.menuItem10.Index = 10;
 			resources.ApplyResources(this.menuItem10, "menuItem10");
 			// 
 			// menuPrintSettings
 			// 
-			this.menuPrintSettings.Index = 10;
+			this.menuPrintSettings.Index = 11;
 			resources.ApplyResources(this.menuPrintSettings, "menuPrintSettings");
 			this.menuPrintSettings.Click += new System.EventHandler(this.menuPrintSettings_Click);
 			// 
 			// menuSettingsScaner
 			// 
-			this.menuSettingsScaner.Index = 11;
+			this.menuSettingsScaner.Index = 12;
 			resources.ApplyResources(this.menuSettingsScaner, "menuSettingsScaner");
 			// 
 			// menuSettingsLanguage
 			// 
 			resources.ApplyResources(this.menuSettingsLanguage, "menuSettingsLanguage");
-			this.menuSettingsLanguage.Index = 12;
+			this.menuSettingsLanguage.Index = 13;
 			this.menuSettingsLanguage.Click += new System.EventHandler(this.menuSettingsLanguage_Click);
 			// 
 			// menuGoto
@@ -2030,6 +2038,11 @@ namespace Kesco.App.Win.DocView.Forms
 			this.dspStampButton.Name = "dspStampButton";
 			this.dspStampButton.Tag = "DSPStamp";
 			// 
+			// menuItemFolders
+			// 
+			this.menuItemFolders.Index = 6;
+			resources.ApplyResources(this.menuItemFolders, "menuItemFolders");
+			// 
 			// MainFormDialog
 			// 
 			resources.ApplyResources(this, "$this");
@@ -2299,6 +2312,7 @@ namespace Kesco.App.Win.DocView.Forms
 		private SplitContainer splitContainerDoc;
 		private MenuItem menuItemSaveSelectedAsStamp;
 		private MenuItem menuSettingsLinkShow;
+		private MenuItem menuItemFolders;
 		private ToolStripSplitButton undoButton;
 		private ToolStripSplitButton redoButton;
 		private StatusBarPanel statusBarPanelArchive;
@@ -2311,5 +2325,6 @@ namespace Kesco.App.Win.DocView.Forms
 		private Lib.Win.Opinion.OpinionControl opinionControl;
 
 		#endregion
+
 	}
 }

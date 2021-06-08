@@ -519,10 +519,31 @@ namespace Kesco.App.Win.DocView.Grids.Styles
 				return false;
 			}
 
-			if(!grid.IsFine || colParams == null)
-				return LoadData(dt);
+                   object keyObj = grid.KeyObject;
+           if (!grid.IsFine || colParams == null)
+                try
+                {
+ 			         grid.SuspendLayout();
+                    if (grid.DataSource != null && dt.Rows.Count > 0)
+                        grid.SetSilent();
+                    return LoadData(dt);
+                }
+                finally
+                {
+                    grid.RemoveSilent();
+                    if (grid.IsFine)
+                    {
+                        if (!grid.SelectRow(keyObj))
+                        {
+                            grid.ClearSelection();
+                            grid.CurrentCell = null;
+                        }
+                    }
+                    else
+                        grid.CurrentCell = null;
+                    grid.ResumeLayout();
+                }
 
-			object keyObj = grid.KeyObject;
 			int firstCellColumnIndex = grid.FirstDisplayedCell == null ? 0 : grid.FirstDisplayedCell.ColumnIndex;
 			int firstCellRowIndex = grid.FirstDisplayedCell == null ? 0 : grid.FirstDisplayedCell.RowIndex;
 			try
